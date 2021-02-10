@@ -69,8 +69,18 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 **Describe your setting, players, activity and goals here.**
 
+Setting is someone's desk where there are 2 players: a person and a color changing object.
+Activity is that based on the emotions the person is experiencing, the object changes color.
+- Initial color before changing (beige)
+- Call with parents is calming (blue)
+- Received F on an assignment is infuriating (red)
+- Text from crush/significant other makes person feel loved (pink)
+> Looking at memes from that text bring joy (yellow)
+The goal is to facilitate interaction between the person and color changing object based on the person's mood.
+
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 **Include a picture of your storyboard here**
+
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 **Summarize feedback you got here.**
