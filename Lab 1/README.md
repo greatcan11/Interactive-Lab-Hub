@@ -76,20 +76,22 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 **Include a picture of your storyboard here**
-![](images/Storyboard.png)
+> The action of the person is stated below and the color the object will change into is in parantheses.
+> ![](images/Storyboard.png)
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 **Summarize feedback you got here.**
-> With my idea of turning this color changing object into a mug, Sals aid that we can put a piece of thin paper over the light to make it look better.  Alan suggested using sounds, such as bubbling to make the interaction more engaging not just visually.
+> With my idea of turning this color changing object into a mug, Sals aid that we can put a piece of thin paper over the light to make it look better.  Alan suggested using sounds, such as bubbling to make the interaction more engaging not just visually.  
 
 ## Part B. Act out the Interaction
 
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 **Are there things that seemed better on paper than acted out?**
+> Just having the color change would not be as noticeable 
 
 **Are there new ideas that occur to you or your collaborators that come up from the acting?**
-
+> Alan came up with the idea that as the object is changing color, the object is also playing music that is related to the emotion.  That way, the changing color is also more noticeable.
 
 ## Part C. Prototype the device
 
