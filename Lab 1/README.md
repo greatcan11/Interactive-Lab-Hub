@@ -70,11 +70,8 @@ The interactive device can be anything *except* a computer, a tablet computer or
 **Describe your setting, players, activity and goals here.**
 
 > The setting is someone's desk.
-
 > The players are comprised of a person and a color changing mug, called the MoodyMug.
-
 > The activity is that based on the emotions the person is experiencing, the mug changes color to match the person's mood.  For example, if the person is sad, angry, or in love, the mug thurns blue, red, and pink respectively.  When the person is not at his or her desk, the mug is a neutral beige color.
-
 > The goal is for the person to live a hydrated lifestyle while having some companionship at their desk (especially since there is no one at the office nowadays due to work from home culture).  With the mug changing color, the person can feel validated when he or she is experiencing a rollercoaster of emotions.  As the mug changes color, the person is also reminded to drink water, allowing them to also handle their emotions well.
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
@@ -114,9 +111,13 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 **Include your first attempts at recording the set-up video here.**
 
+> [Setup: ](https://drive.google.com/file/d/1qcjL0XvxY_wQjxNLHKbQdlJ4N4EOsEpV/view?usp=sharing) This attempt shows how tinkerbelle is being controlled remotely using a wireless mouse and the color change can be visible while recording as the phone is being propped up.  Since this is the intial test for the setup, there was no interaction between the person and the device as I wanted to make sure the device could change color.
+> [First Type of Interaction: ](https://drive.google.com/file/d/1BFQv1Tecd8sAP_El4dD6OGfVWi0sh6-9/view?usp=sharing) This interaction is having the color change based on the person's mood.  The person's mood is expressed through their feelings as they are explaining about different events happening in their lives.
+
 Now, change the goal within the same setting, and update the interaction with the paper prototype. 
 
 **Show the follow-up work here.**
+> [Second Type of Interaction: ](https://drive.google.com/file/d/1UGrD8xygJkbXcb7_1NIU_a1KtNizHmR2/view?usp=sharing) This interaction is still at the person's desk and the color change is based on the person's mood.  However, the interaction also involves encouraging the person to stay hydrated and so the intensity of the color changes so it looks like it is flashing.  This gets the person's interaction and prompts the person to take a drink.
 
 ## Part E. Costume the device
 
@@ -126,15 +127,22 @@ Think about the setting of the device: is the environment a place where the devi
 
 **Include sketches of what your device might look like here.**
 
+> ![](images/Sketch.png)
+
 **What concerns or opportunitities are influencing the way you've designed the device to look?**
+
+> Every person's office desk has a mug since it is important to stay hydrated throughout the day.  Similar to "mood rings", this device can be called a "mood mug".  A mug should be shaped as a cylinder with an opening at the top with a nice handle.  Since this mug is color changing, it should not be opaque but transparent so that the color changing from the phone can be seen through the cylindrical container.  The handle can have a similar transluscent effect as the container by using some clera plastic.  In order to make it look like the whole mug is changing color, water can be put inside the cylindrical container while the phone is placed right behind it.  That way, the colored light is shone through the water so the entire mug looks like it is changing color.
+> A concern despite all these opportunities is getting the phone wet because there is water that can spill.  Instead of the person holding the mug solely using the handle, the person can carry the mug by using both hands around the container.  Additionally, the container shouldn't be filled with water all the way to avoid any spillage.
 
 
 ## Part F. Record
 
 **Take a video of your prototyped interaction.**
+> [Prototyped Interaction: ](https://drive.google.com/file/d/1vw0BBLqURjqqueMAnbpgEl_tYy2q9FSL/view?usp=sharing) This is the prototyped interaction where the person comes to her office and is first saddened that she cannot spend Chinese New Year with her parents.  The mug changes from a neutral to blue color and then blinks, reminding the person to drink water.  The person discovers her bad grade from an assignment, and the mug turns into a red color to empathize, and also blinks to remind the person to hydrate.  The blinking stops after the person drinks enough water.  When the person discovers she has a date to spend the new year with, she is blushing and the mug reflects that.  The mug no longer blinks since she has already consumed enough water.
 
 **Please indicate anyone you collaborated with on this Lab.**
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
+> I had the idea of a color changing object because Alan mentioned a color changing cuttlefish.  These cuttlefish changed color based on their environment.  Sal proposed the idea of how to diffuse the light better and that is where I got the idea to use water instead of thin paper or tissue paper since I did not have those materials at my home.
 
 # Staging Interaction, Part 2 
 
