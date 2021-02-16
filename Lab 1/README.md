@@ -162,6 +162,8 @@ You will be assigned three partners from another group. Go to their github pages
 
 **Summarize feedback from your partners here.**
 
+Everyone I talked to really enjoyed my prototype that was aesthetically pleasing as well as the dual functionality of having a companion that empathizes with your mood as well as a reminder to drink water.  Bebe said that I can provide more voice interaction to provide more comfort.  Priya suggested that it would be cool to extend this device so that it can also be used to water plants.  Sujith suggested also having a tracker so it displays how much water the person has consumed.
+
 ## Make it your own
 
 Do last week’s assignment again, but this time: 
