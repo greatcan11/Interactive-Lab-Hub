@@ -172,3 +172,23 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 **Document everything here.**
+
+### Plan
+> After getting great feedback from other students, it would be nice to build on the idea I started from last week.  Since some people use waterbottles instead of mugs, I decided to make this device more accessible to everyone by making the light shown through a sleeve.  This sleeve can be placed on any beverage container, so your favorite designs aren't covered.  Thus, the setting, players, activity, and goals are still very similar with the addition of having vibrations
+
+> The setting is someone's desk.
+> The players are comprised of a person and a color changing waterbottle.
+> The activity is that based on the emotions the person is experiencing, the waterbottle changes color to match the person's mood. For example, if the person is sad, angry, or in love, the mug thurns blue, red, and pink respectively. When the person is not at his or her desk, the mug is a neutral beige color.
+> 
+
+
+### Part C. Prototype the device
+
+### Part D. Wizarding the device
+
+### Part E. Costume the device
+
+### Part F. Record the Interaction
+
+
+
