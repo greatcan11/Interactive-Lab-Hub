@@ -70,11 +70,11 @@ The interactive device can be anything *except* a computer, a tablet computer or
 **Describe your setting, players, activity and goals here.**
 
 > The setting is someone's desk.
-
+>
 > The players are comprised of a person and a color changing mug, called the MoodMug.
-
+>
 > The activity is that based on the emotions the person is experiencing, the mug changes color to match the person's mood.  For example, if the person is sad, angry, or in love, the mug thurns blue, red, and pink respectively.  When the person is not at his or her desk, the mug is a neutral beige color.
-
+>
 > The goal is for the person to live a hydrated lifestyle while having some companionship at their desk (especially since there is no one at the office nowadays due to work from home culture).  With the mug changing color, the person can feel validated when he or she is experiencing a rollercoaster of emotions.  As the mug changes color, the person is also reminded to drink water, allowing them to also handle their emotions well.
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
@@ -177,7 +177,7 @@ Do last week’s assignment again, but this time:
 > After getting great feedback from other students, it would be nice to build on the idea I started from last week.  Since some people have a favorite mug that they already used, I thought it would not be sustainable for them to no longer use that mug and get a MoodMug just to enjoy this feature.  I decided to modify this MoodMug into an accessory that can be attached to any mug or really any beverage container.  Thus, the setting, players, activity, and goals are still very similar with the addition of having vibrations
 
 > The setting is someone's desk.
-> The players are comprised of a person and a color changing waterbottle.
+> The players are comprised of a person and a color changing MoodMug accessory.
 > The activity is that based on the emotions the person is experiencing, the MoodMug accessory changes color to match the person's mood. For example, if the person is sad or very touched, the MoodMug accesory turns blue or pink respectively, empathizing with the person. 
 > The second goal is to keep the person hydrated.  Whenever the the person should drink water, the MoodMug accesory will flash.  If the person does not drink even after flashing, the accessory will vibrate.  This will grab the person's attention if they did not notice the visual cues, which can happen if they are focused on another activity on their desk, such as work.
 
@@ -190,7 +190,7 @@ Do last week’s assignment again, but this time:
 > 
 > ![](images/Sketch2.png)
 > 
-> The first design was a disk to attach at the bottom of the mug, as suggested by Caitlin.  However, many mugs are opaque and the very thin lining at the bottom would not bring as much attention.  Thus, I changed the design to only have the handle change different colors, since majority of mugs have plain handles.  However, many mugs have different types of curves that would make it hard to manufacture an accessory that can easily fit any mug handle.  THus, my final design consists of only part of the handle being covered with the accessory.  That way, this accessory is like a strap that can be easily attached and adjusted to any mug handle.
+> The first design was a disk to attach at the bottom of the mug, as suggested by Caitlin.  However, many mugs are opaque and the very thin lining at the bottom would not bring as much attention.  Thus, I changed the design to only have the handle change different colors, since majority of mugs have plain handles.  However, many mugs have different types of curves that would make it hard to manufacture an accessory that can easily fit any mug handle.  Thus, my final design consists of only part of the handle being covered with the accessory.  That way, this accessory is like a strap that can be easily attached and adjusted to any mug handle.
 
 ### Part F. Costume the Device and Record the Interaction
 > To costume the device, I used tin foil to act as the accessory.  I cut a strip and wrapped it around my mug handle.  By placing it in front of the tinkerbelle color changing screen, the reflective properties from the tin foil will make it look like the handle accessory is changing.  The prototype interaction can be found [here](https://drive.google.com/file/d/14BjKpWOnsErzb6d9Zc4ojP_A0GEVWfEa/view?usp=sharing).
