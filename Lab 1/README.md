@@ -95,7 +95,7 @@ Try physically acting out the interaction you planned. For now, you can just pre
 
 **Are there new ideas that occur to you or your collaborators that come up from the acting?**
 > Alan came up with the idea that as the object is changing color, the object is also playing music that is related to the emotion.  That way, the changing color is also more noticeable.  
-
+>
 > I also thought of the idea of adding more to the interaction between the mug and person.  The mug can also blink or flash shades of the respective color, to indicate that the person should drink more water.  If it doesn't flash, then the person is hydrated enough.
 
 ## Part C. Prototype the device
@@ -115,7 +115,7 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 **Include your first attempts at recording the set-up video here.**
 
 > [Setup: ](https://drive.google.com/file/d/1qcjL0XvxY_wQjxNLHKbQdlJ4N4EOsEpV/view?usp=sharing) This attempt shows how tinkerbelle is being controlled remotely using a wireless mouse and the color change can be visible while recording as the phone is being propped up.  Since this is the intial test for the setup, there was no interaction between the person and the device as I wanted to make sure the device could change color.
-
+>
 > [First Type of Interaction: ](https://drive.google.com/file/d/1BFQv1Tecd8sAP_El4dD6OGfVWi0sh6-9/view?usp=sharing) This interaction is having the color change based on the person's mood.  The person's mood is expressed through their feelings as they are explaining about different events happening in their lives.
 
 Now, change the goal within the same setting, and update the interaction with the paper prototype. 
@@ -135,8 +135,8 @@ Think about the setting of the device: is the environment a place where the devi
 
 **What concerns or opportunitities are influencing the way you've designed the device to look?**
 
-> Every person's office desk has a mug since it is important to stay hydrated throughout the day.  Similar to "mood rings", this device can be called a "mood mug".  A mug should be shaped as a cylinder with an opening at the top with a nice handle.  Since this mug is color changing, it should not be opaque but transparent so that the color changing from the phone can be seen through the cylindrical container.  The handle can have a similar transluscent effect as the container by using some clera plastic.  In order to make it look like the whole mug is changing color, water can be put inside the cylindrical container while the phone is placed right behind it.  That way, the colored light is shone through the water so the entire mug looks like it is changing color.
-
+> Every person's office desk has a mug since it is important to stay hydrated throughout the day.  Similar to "mood rings", this device can be called a MoodMug.  A mug should be shaped as a cylinder with an opening at the top with a nice handle.  Since this mug is color changing, it should not be opaque but transparent so that the color changing from the phone can be seen through the cylindrical container.  The handle can have a similar transluscent effect as the container by using some clera plastic.  In order to make it look like the whole mug is changing color, water can be put inside the cylindrical container while the phone is placed right behind it.  That way, the colored light is shone through the water so the entire mug looks like it is changing color.
+>
 > A concern despite all these opportunities is getting the phone wet because there is water that can spill.  Instead of the person holding the mug solely using the handle, the person can carry the mug by using both hands around the container.  Additionally, the container shouldn't be filled with water all the way to avoid any spillage.
 
 
@@ -144,7 +144,7 @@ Think about the setting of the device: is the environment a place where the devi
 
 **Take a video of your prototyped interaction.**
 > [Prototyped Interaction: ](https://drive.google.com/file/d/1vw0BBLqURjqqueMAnbpgEl_tYy2q9FSL/view?usp=sharing) This is the prototyped interaction where the person comes to her office and is first saddened that she cannot spend Chinese New Year with her parents.  The mug changes from a neutral to blue color and then blinks, reminding the person to drink water.  The person discovers her bad grade from an assignment, and the mug turns into a red color to empathize, and also blinks to remind the person to hydrate.  The blinking stops after the person drinks enough water.  When the person discovers she has a date to spend the new year with, she is blushing and the mug reflects that.  The mug no longer blinks since she has already consumed enough water.
-
+>
 > This final recording of the interaction between the person and device is based off the original storyboard but has an added theme of Chinese New Year.  This happened because as I continued to act out my interaction with this device as if it was my own, I was myself, not just a person acting out an interaction with the device.  Thus, I was able to construct a story that is more relevant and not just forced.  This helped even more with designing how the mug should change color and flash to remind me to drink water.
 
 **Please indicate anyone you collaborated with on this Lab.**
@@ -175,12 +175,12 @@ Do last week’s assignment again, but this time:
 
 ### Plan
 > After getting great feedback from other students, it would be nice to build on the idea I started from last week.  Since some people have a favorite mug that they already used, I thought it would not be sustainable for them to no longer use that mug and get a MoodMug just to enjoy this feature.  I decided to modify this MoodMug into an accessory that can be attached to any mug or really any beverage container.  Thus, the setting, players, activity, and goals are still very similar with the addition of having vibrations
-
+>
 > The setting is someone's desk.
 > The players are comprised of a person and a color changing MoodMug accessory.
 > The activity is that based on the emotions the person is experiencing, the MoodMug accessory changes color to match the person's mood. For example, if the person is sad or very touched, the MoodMug accesory turns blue or pink respectively, empathizing with the person. 
 > The second goal is to keep the person hydrated.  Whenever the the person should drink water, the MoodMug accesory will flash.  If the person does not drink even after flashing, the accessory will vibrate.  This will grab the person's attention if they did not notice the visual cues, which can happen if they are focused on another activity on their desk, such as work.
-
+>
 > Below is a storyboard for this new device:
 >  
 > ![](images/Storyboard2.png)
@@ -193,9 +193,9 @@ Do last week’s assignment again, but this time:
 > The first design was a disk to attach at the bottom of the mug, as suggested by Caitlin.  However, many mugs are opaque and the very thin lining at the bottom would not bring as much attention.  Thus, I changed the design to only have the handle change different colors, since majority of mugs have plain handles.  However, many mugs have different types of curves that would make it hard to manufacture an accessory that can easily fit any mug handle.  With this in mind, my final design consists of only part of the handle being covered with the accessory.  That way, this accessory is like a strap that can be easily attached and adjusted to any mug handle.
 
 ### Costume the Device and Record the Interaction
-> To costume the device, I used tin foil to act as the accessory.  I cut a strip and wrapped it around my mug handle.  By placing it in front of the tinkerbelle color changing screen, the reflective properties from the tin foil will make it look like the handle accessory is changing.  
+> To costume the device, I used tin foil to act as the accessory.  I cut a strip and wrapped it around my mug handle.  By placing it in front of the Tinkerbelle color changing screen, the reflective properties from the tin foil will make it look like the handle accessory is changing.  
 >
-> The prototype interaction can be found [here](https://drive.google.com/file/d/14BjKpWOnsErzb6d9Zc4ojP_A0GEVWfEa/view?usp=sharing).  The user is sad that her MoodMug has disappeared and so the handle turns blue.  It also starts flashing to remind the user to drink water.  When the user ignores the flashing, there are vibrations from the handle and so the user drinks water.  As the user is reminded of this new MoodMug accessory, she is in love with it and the handle turns pink.  Again, the handle flashes and vibrates to remind the user to stay hydrated.
+> [Prototype Interaction:](https://drive.google.com/file/d/14BjKpWOnsErzb6d9Zc4ojP_A0GEVWfEa/view?usp=sharing).  The user is sad that her MoodMug has disappeared and so the handle turns blue.  It also starts flashing to remind the user to drink water.  When the user ignores the flashing, there are vibrations from the handle and so the user drinks water.  As the user is reminded of this new MoodMug accessory, she is in love with it and the handle turns pink.  Again, the handle flashes and vibrates to remind the user to stay hydrated.
 
 ### Reflection
 > I really appreciate all the classmates that gave me feedback as this idea finally developed into this MoodMug handle accessory.  I am pleasantly surprised by what could happen in a week.  I realized that once I made this problem personal and more applicable to my own life, it was easier to craft a solution that made more sense versus with the goal of trying to come up with an interactive device for an assignment.  This was especially helpful for part 2 since I really like my mug and would not buy another one to replace it.  However, in order to have this feature, I would purchase a strap to go around the handle and it does not bother with the aesthetics of the mug, only enhancing it.
