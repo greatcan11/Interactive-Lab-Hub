@@ -105,6 +105,9 @@ You will be using your smartphone as a stand-in for the device you are prototypi
 Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/FAR-Lab/tinkerbelle).
 
 We invented this tool for this lab! 
+
+If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
+
 **Give us feedback on Tinkerbelle.**
 > I think that Tinkerbelle does a pretty good job and I like how you can easily control it from the computer and project it on the phone since it makes it easier to prototype.  It is also very simple to use!  
 > I think it would be beneficial if there is an option to fade into another color when you select from one color to another instead of manually sliding the color bar.  I thought this would give my prototype smoother transitions as it goes from one color to another.
@@ -171,6 +174,7 @@ Do last week’s assignment again, but this time:
 2) You can use any modality (e.g., vibration, sound) to prototype the behaviors, 
 3) We will be grading with an emphasis on creativity. 
 
+<<<<<<< HEAD
 **Document everything here.**
 
 ### Plan
@@ -199,3 +203,6 @@ Do last week’s assignment again, but this time:
 
 ### Reflection
 > I really appreciate all the classmates that gave me feedback as this idea finally developed into this MoodMug handle accessory.  I am pleasantly surprised by what could happen in a week.  I realized that once I made this problem personal and more applicable to my own life, it was easier to craft a solution that made more sense versus with the goal of trying to come up with an interactive device for an assignment.  This was especially helpful for part 2 since I really like my mug and would not buy another one to replace it.  However, in order to have this feature, I would purchase a strap to go around the handle and it does not bother with the aesthetics of the mug, only enhancing it.
+=======
+**Document everything here. (Particularly we'd like to see the storyboard and video, although photos of the prototype are also great.)**
+>>>>>>> 2226ae6286232393c4220ed9e64800cb41deedc8
