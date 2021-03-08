@@ -66,6 +66,10 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
+    TIME = strftime("%m/%d/%Y %H:%M:%S")
+    # Write four lines of text.
+    y = top
+    draw.text((x, y), TIME, font=font, fill="#FFFFFF")
 
     # Display image.
     disp.image(image, rotation)
