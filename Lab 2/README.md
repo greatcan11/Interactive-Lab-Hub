@@ -175,11 +175,15 @@ After that, git will ask you to login to your github account to upload.
 
 ## Prep for Part 2
 
-1. Pick up remaining parts for kit.
+1. Pick up remaining parts for kit. 
+> Still have not received parts since I am currently in Ithaca.
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
+> Gave feedback to Caitlin Stanton.
 
 # Lab 2 Part 2
+
+> Unable to do since I have not received RPi 4.
 
 Pull Interactive Lab Hub updates to your repo.
 
