@@ -83,7 +83,8 @@ backlight.value = True
 
 while True:
     # Draw a black filled box to clear the image.
-    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    #draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    disp.image(image)
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
     TIME = strftime("%m/%d/%Y %H:%M:%S")
