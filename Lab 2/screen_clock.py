@@ -67,11 +67,9 @@ x = 0
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 
-# disp.image(image)
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    # disp.image(image)
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
     TIME = strftime("%m/%d/%Y %H:%M:%S")

@@ -61,6 +61,7 @@ x = 0
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+font_big = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 28)
 
 # setup backlight and buttons
 backlight = digitalio.DigitalInOut(board.D22)
@@ -75,15 +76,19 @@ buttonB.switch_to_input()
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    # disp.image(image)
-
+    
     # Extract Date and Time
     DATE = strftime("%m/%d/%Y")
     TIME = strftime("%H:%M:%S")
     # Write four lines of text.
     y = top
     draw.text((x, y), DATE, font=font, fill="#FFFFFF")
-    draw.text((x, y+10), TIME, font=font, fill="#FFFFFF")
+    draw.text((x, y+20), TIME, font=font, fill="#FFFFFF")
+
+    if buttonA.value:
+        draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
+    if buttonB.value:
+        display.fill(color565(0, 255, 0))  # green
 
     # Display image.
     disp.image(image,rotation)
