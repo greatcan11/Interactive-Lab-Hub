@@ -99,7 +99,7 @@ while True:
     draw.text((x, y+80), str(pressed), font=font, fill="#FFFFFF")
     # time.sleep(1)
 
-    if buttonA.value:
+    if not buttonA.value:
         # draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0)) 
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
     
