@@ -78,10 +78,10 @@ while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
-    if buttonB.value:
+    if not buttonB.value:
         pressed = True
     if not pressed:
-        disp.fill(color565(255, 0, 0))  # red
+        draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
 
     # Extract Date and Time
     DATE = strftime("%m/%d/%Y")
