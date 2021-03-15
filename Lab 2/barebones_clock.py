@@ -97,6 +97,7 @@ while True:
     draw.text((x, y), DATE, font=font, fill="#FFFFFF")
     draw.text((x, y+20), TIME, font=font, fill="#FFFFFF")
     draw.text((x, y+80), str(pressed), font=font, fill="#FFFFFF")
+    time.sleep(1)
 
     if not buttonA.value:
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
