@@ -76,14 +76,14 @@ buttonB.switch_to_input()
 pressed = False
 while True:
     # Draw a black filled box to clear the image.
-    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    draw.rectangle((0, 0, width, height), outline=0, fill=(0,0,255))
     print(pressed)
     if not buttonB.value:
         pressed = True
     if not pressed and int(time.time())%2 == 0:
         print("draw red")
         draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
-        pressed = 1
+        pressed = True
     # if pressed > 0:
     #     print("draw black")
     #     draw.rectangle((0, 0, width, height), outline=0, fill=0) #black
