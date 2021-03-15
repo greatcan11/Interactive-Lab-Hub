@@ -4,8 +4,12 @@ import subprocess
 import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
-import adafruit_rgb_display.st7789 as st7789
-
+import adafruit_rgb_display.ili9341 as ili9341
+import adafruit_rgb_display.st7789 as st7789  # pylint: disable=unused-import
+import adafruit_rgb_display.hx8357 as hx8357  # pylint: disable=unused-import
+import adafruit_rgb_display.st7735 as st7735  # pylint: disable=unused-import
+import adafruit_rgb_display.ssd1351 as ssd1351  # pylint: disable=unused-import
+import adafruit_rgb_display.ssd1331 as ssd1331  # pylint: disable=unused-import
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
