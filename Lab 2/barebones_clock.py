@@ -83,7 +83,7 @@ while True:
     if not pressed and int(time.time())%2 == 0:
         print("draw red")
         draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
-        pressed = True
+        
     # if pressed > 0:
     #     print("draw black")
     #     draw.rectangle((0, 0, width, height), outline=0, fill=0) #black
