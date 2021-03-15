@@ -85,7 +85,7 @@ while True:
         pressed = 1
     if pressed == 1:
         pressed = 0
-
+    
     # Extract Date and Time
     DATE = strftime("%m/%d/%Y")
     TIME = strftime("%H:%M:%S")
@@ -93,6 +93,7 @@ while True:
     y = top
     draw.text((x, y), DATE, font=font, fill="#FFFFFF")
     draw.text((x, y+20), TIME, font=font, fill="#FFFFFF")
+    draw.text((x, y+80), pressed, font=font, fill="#FFFFFF")
 
     if not buttonA.value:
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
