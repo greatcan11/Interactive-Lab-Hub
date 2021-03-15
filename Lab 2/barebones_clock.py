@@ -88,7 +88,7 @@ while True:
     if buttonA.value:
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
     if buttonB.value:
-        display.fill(color565(0, 255, 0))  # green
+        disp.fill(color565(0, 255, 0))  # green
 
     # Display image.
     disp.image(image,rotation)
