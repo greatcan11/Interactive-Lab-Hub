@@ -83,7 +83,7 @@ while True:
     
     # Write four lines of text.
     y = top
-    draw.text((x, y), TIME, font=font, fill=(0,0,0))
+    draw.text((x, y), TIME, font=font, fill=(255,255,255))
     if int(time.time())%2 == 0:
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill=(255,0,0))
        

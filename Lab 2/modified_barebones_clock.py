@@ -89,15 +89,15 @@ while True:
     TIME = strftime("%H:%M:%S")
     # Write four lines of text.
     y = top
-    draw.text((x, y), DATE, font=font, fill=(0,0,0))
-    draw.text((x+110, y), TIME, font=font_big, fill=(0,0,0))
+    draw.text((x, y), DATE, font=font, fill=(255,255,255))
+    draw.text((x+110, y), TIME, font=font_big, fill=(255,255,255))
     if not pressed:
-        draw.text((x, y+95), "<-- Clear Alert", font=font, fill=(0,0,0))   
+        draw.text((x, y+95), "<-- Clear Alert", font=font, fill=(255,255,255))   
     if not buttonA.value:
-        draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill=(0,0,0))
+        draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill=(255,255,255))
     else:
         if not pressed:
-            draw.text((x, y+25), "<-- Show Alert", font=font, fill=(0,0,0))
+            draw.text((x, y+25), "<-- Show Alert", font=font, fill=(255,255,255))
     
     # Display image.
     disp.image(image,rotation)
