@@ -81,27 +81,22 @@ while True:
     if not buttonB.value:
         pressed = True
     if not pressed and int(time.time())%2 == 0:
-        print("draw red")
         draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
         
-    # if pressed > 0:
-    #     print("draw black")
-    #     draw.rectangle((0, 0, width, height), outline=0, fill=0) #black
-    #     pressed = 0
-    print("after this: ",pressed,"--------------------")
+    
     # Extract Date and Time
     DATE = strftime("%m/%d/%Y")
     TIME = strftime("%H:%M:%S")
     # Write four lines of text.
     y = top
     draw.text((x, y), DATE, font=font, fill="#FFFFFF")
-    draw.text((x, y+20), TIME, font=font, fill="#FFFFFF")
-    draw.text((x, y+80), str(pressed), font=font, fill="#FFFFFF")
-    # time.sleep(1)
-
+    draw.text((x+80, y), TIME, font=font_big, fill="#FFFFFF")
+    if not pressed:
+        draw.text((x, y+85), "Clear alert", font=font, fill="#FFFFFF")   
     if not buttonA.value:
-        # draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0)) 
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
+    else:
+        draw.text((x, y+40), "Show alert", font=font_big, fill="#FFFFFF")
     
     # Display image.
     disp.image(image,rotation)
