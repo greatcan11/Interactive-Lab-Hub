@@ -56,7 +56,7 @@ draw = ImageDraw.Draw(image)
 
 # Draw a black filled box to clear the image.
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-disp.image(image)
+disp.image(image,rotation)
 
 # image = Image.open("red.jpg")
 backlight = digitalio.DigitalInOut(board.D22)
