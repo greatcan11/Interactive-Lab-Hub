@@ -42,11 +42,6 @@ rotation = 0
 # Get drawing object to draw on image.
 draw = ImageDraw.Draw(image)
 
-# Draw a black filled box to clear the image.
-draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-disp.image(image)
-image = Image.open("red.jpg")
-
 # Scale the image to the smaller screen dimension
 image_ratio = image.width / image.height
 screen_ratio = width / height
@@ -75,6 +70,12 @@ x = 0
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+
+
+# Draw a black filled box to clear the image.
+draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+disp.image(image)
+image = Image.open("red.jpg")
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
