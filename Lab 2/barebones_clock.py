@@ -73,15 +73,18 @@ buttonB = digitalio.DigitalInOut(board.D24)
 buttonA.switch_to_input()
 buttonB.switch_to_input()
 
-pressed = False
+pressed = 0
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     if not buttonB.value:
-        pressed = True
-    if not pressed:
+        pressed = 2
+    if pressed == 0:
         draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
+        pressed = 1
+    if pressed == 1
+        pressed = 0
 
     # Extract Date and Time
     DATE = strftime("%m/%d/%Y")
