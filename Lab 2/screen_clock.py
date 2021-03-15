@@ -33,14 +33,27 @@ disp = st7789.ST7789(
 
 # Create blank image for drawing.
 # Make sure to create image with mode 'RGB' for full color.
-height = disp.width  # we swap height/width to rotate it to landscape!
-width = disp.height
+if disp.rotation % 180 == 90:
+    height = disp.width  # we swap height/width to rotate it to landscape!
+    width = disp.height
+else:
+    width = disp.width  # we swap height/width to rotate it to landscape!
+    height = disp.height
 image = Image.new("RGB", (width, height))
 # rotation = 90
 rotation = 0
 
 # Get drawing object to draw on image.
 draw = ImageDraw.Draw(image)
+
+# Draw a black filled box to clear the image.
+draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+disp.image(image)
+
+image = Image.open("red.jpg")
+backlight = digitalio.DigitalInOut(board.D22)
+backlight.switch_to_output()
+backlight.value = True
 
 # Scale the image to the smaller screen dimension
 image_ratio = image.width / image.height
@@ -72,16 +85,6 @@ x = 0
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 
 
-# Draw a black filled box to clear the image.
-draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-# disp.image(image)
-image = Image.open("red.jpg")
-
-# Turn on the backlight
-backlight = digitalio.DigitalInOut(board.D22)
-backlight.switch_to_output()
-backlight.value = True
-
 while True:
     # Draw a black filled box to clear the image.
     #draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -94,5 +97,5 @@ while True:
     draw.text((x, y), TIME, font=font, fill="#FFFFFF")
 
     # Display image.
-    disp.image(image, rotation)
+    disp.image(image)
     time.sleep(1)
