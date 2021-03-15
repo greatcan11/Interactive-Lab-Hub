@@ -49,11 +49,6 @@ draw = ImageDraw.Draw(image)
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image,rotation)
 
-# setup backlight 
-backlight = digitalio.DigitalInOut(board.D22)
-backlight.switch_to_output()
-backlight.value = True
-
 # Draw some shapes.
 # First define some constants to allow easy resizing of shapes.
 padding = -2
@@ -67,17 +62,28 @@ x = 0
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 
+# setup backlight and buttons
+backlight = digitalio.DigitalInOut(board.D22)
+backlight.switch_to_output()
+backlight.value = True
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
+
 # disp.image(image)
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     # disp.image(image)
 
-    #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
-    TIME = strftime("%m/%d/%Y %H:%M:%S")
+    # Extract Date and Time
+    DATE = strftime("%m/%d/%Y")
+    TIME = strftime("%H:%M:%S")
     # Write four lines of text.
     y = top
-    draw.text((x, y), TIME, font=font, fill="#FFFFFF")
+    draw.text((x, y), DATE, font=font, fill="#FFFFFF")
+    draw.text((x, y+10), TIME, font=font, fill="#FFFFFF")
 
     # Display image.
     disp.image(image,rotation)
