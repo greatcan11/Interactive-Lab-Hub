@@ -73,11 +73,16 @@ buttonB = digitalio.DigitalInOut(board.D24)
 buttonA.switch_to_input()
 buttonB.switch_to_input()
 
-# disp.image(image)
+pressed = False
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    
+
+    if buttonB.value:
+        pressed = True
+    if not pressed:
+        disp.fill(color565(255, 0, 0))  # red
+
     # Extract Date and Time
     DATE = strftime("%m/%d/%Y")
     TIME = strftime("%H:%M:%S")
@@ -86,11 +91,9 @@ while True:
     draw.text((x, y), DATE, font=font, fill="#FFFFFF")
     draw.text((x, y+20), TIME, font=font, fill="#FFFFFF")
 
-    if buttonA.value:
+    if not buttonA.value:
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
-    if buttonB.value:
-        disp.fill(color565(0, 255, 0))  # green
-
+    
     # Display image.
     disp.image(image,rotation)
     time.sleep(1)
