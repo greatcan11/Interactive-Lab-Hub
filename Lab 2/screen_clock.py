@@ -43,6 +43,10 @@ if disp.rotation % 180 == 90:
 else:
     width = disp.width  # we swap height/width to rotate it to landscape!
     height = disp.height
+
+#added this
+height = disp.width  # we swap height/width to rotate it to landscape!
+width = disp.height
 image = Image.new("RGB", (width, height))
 # rotation = 90
 rotation = 0
