@@ -84,7 +84,6 @@ while True:
     if not pressed and int(time.time())%2 == 0:
         draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
         
-    
     # Extract Date and Time
     DATE = strftime("%m/%d/%Y")
     TIME = strftime("%H:%M:%S")
@@ -93,7 +92,7 @@ while True:
     draw.text((x, y), DATE, font=font, fill="#FFFFFF")
     draw.text((x+110, y), TIME, font=font_big, fill="#FFFFFF")
     if not pressed:
-        draw.text((x, y+95, "<-- Clear Alert", font=font, fill="#FFFFFF")   
+        draw.text((x, y+95), "<-- Clear Alert", font=font, fill="#FFFFFF")   
     if not buttonA.value:
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
     else:
