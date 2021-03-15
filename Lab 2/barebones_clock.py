@@ -91,14 +91,14 @@ while True:
     # Write four lines of text.
     y = top
     draw.text((x, y), DATE, font=font, fill="#FFFFFF")
-    draw.text((x+100, y), TIME, font=font_big, fill="#FFFFFF")
+    draw.text((x+110, y), TIME, font=font_big, fill="#FFFFFF")
     if not pressed:
-        draw.text((x, y+90), "<-- Clear Alert", font=font, fill="#FFFFFF")   
+        draw.text((x, y+95, "<-- Clear Alert", font=font, fill="#FFFFFF")   
     if not buttonA.value:
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
     else:
         if not pressed:
-            draw.text((x, y+20), "<-- Show Alert", font=font, fill="#FFFFFF")
+            draw.text((x, y+25), "<-- Show Alert", font=font, fill="#FFFFFF")
     
     # Display image.
     disp.image(image,rotation)
