@@ -45,11 +45,11 @@ disp = st7789.ST7789(
 #     height = disp.height
 
 #added this
-width = disp.width  # we swap height/width to rotate it to landscape!
-height = disp.height
+height = disp.width  # we swap height/width to rotate it to landscape!
+width = disp.height
 image = Image.new("RGB", (width, height))
-# rotation = 90
-rotation = 0
+rotation = 90
+# rotation = 0
 
 # Get drawing object to draw on image.
 draw = ImageDraw.Draw(image)
@@ -58,7 +58,7 @@ draw = ImageDraw.Draw(image)
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image)
 
-image = Image.open("red.jpg")
+# image = Image.open("red.jpg")
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
