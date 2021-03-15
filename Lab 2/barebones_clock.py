@@ -84,6 +84,7 @@ while True:
         draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
         pressed = 1
     if pressed == 1:
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
         pressed = 0
     
     # Extract Date and Time
