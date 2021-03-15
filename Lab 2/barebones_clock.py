@@ -76,7 +76,7 @@ buttonB.switch_to_input()
 pressed = False
 while True:
     # Draw a black filled box to clear the image.
-    draw.rectangle((0, 0, width, height), outline=0, fill=(0,0,255))
+    draw.rectangle((0, 0, width, height), outline=0, fill=(0,0,0))
     print(pressed)
     if not buttonB.value:
         pressed = True
@@ -100,8 +100,8 @@ while True:
     # time.sleep(1)
 
     if buttonA.value:
+        # draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0)) 
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
-        draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0)) 
     
     # Display image.
     disp.image(image,rotation)
