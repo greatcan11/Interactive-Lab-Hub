@@ -88,10 +88,10 @@ x = 0
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 
-
+# disp.image(image)
 while True:
     # Draw a black filled box to clear the image.
-    #draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
     disp.image(image)
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
@@ -101,5 +101,5 @@ while True:
     draw.text((x, y), TIME, font=font, fill="#FFFFFF")
 
     # Display image.
-    disp.image(image)
+    # disp.image(image)
     time.sleep(1)
