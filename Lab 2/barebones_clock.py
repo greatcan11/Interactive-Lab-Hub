@@ -77,16 +77,18 @@ pressed = 0
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-
+    print(pressed)
     if not buttonB.value:
         pressed = 2
     if pressed == 0:
+        print("draw red")
         draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
         pressed = 1
-    if pressed == 1:
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    if pressed > 0:
+        print("draw black")
+        draw.rectangle((0, 0, width, height), outline=0, fill=0) #black
         pressed = 0
-    
+    print("after this: ",pressed,"--------------------")
     # Extract Date and Time
     DATE = strftime("%m/%d/%Y")
     TIME = strftime("%H:%M:%S")
