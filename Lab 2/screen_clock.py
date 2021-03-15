@@ -37,16 +37,16 @@ disp = st7789.ST7789(
 
 # Create blank image for drawing.
 # Make sure to create image with mode 'RGB' for full color.
-if disp.rotation % 180 == 90:
-    height = disp.width  # we swap height/width to rotate it to landscape!
-    width = disp.height
-else:
-    width = disp.width  # we swap height/width to rotate it to landscape!
-    height = disp.height
+# if disp.rotation % 180 == 90:
+#     height = disp.width  # we swap height/width to rotate it to landscape!
+#     width = disp.height
+# else:
+#     width = disp.width  # we swap height/width to rotate it to landscape!
+#     height = disp.height
 
 #added this
-height = disp.width  # we swap height/width to rotate it to landscape!
-width = disp.height
+width = disp.width  # we swap height/width to rotate it to landscape!
+height = disp.height
 image = Image.new("RGB", (width, height))
 # rotation = 90
 rotation = 0
