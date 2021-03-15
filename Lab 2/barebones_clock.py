@@ -77,28 +77,16 @@ pressed = False
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=(0,0,0))
-
-    # Flash red if alert hasn't been cleared
-    if not buttonB.value:
-        pressed = True
-    if not pressed and int(time.time())%2 == 0:
-        draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
         
     # Extract Date and Time
-    DATE = strftime("%m/%d/%Y")
-    TIME = strftime("%H:%M:%S")
+    TIME = strftime("%m/%d/%Y %H:%M:%S")
+    
     # Write four lines of text.
     y = top
-    draw.text((x, y), DATE, font=font, fill="#FFFFFF")
-    draw.text((x+110, y), TIME, font=font_big, fill="#FFFFFF")
-    if not pressed:
-        draw.text((x, y+95), "<-- Clear Alert", font=font, fill="#FFFFFF")   
-    if not buttonA.value:
-        draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
-    else:
-        if not pressed:
-            draw.text((x, y+25), "<-- Show Alert", font=font, fill="#FFFFFF")
-    
+    draw.text((x, y), TIME, font=font, fill=(0,0,0))
+    if int(time.time())%2 == 0:
+        draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill=(255,0,0))
+       
     # Display image.
     disp.image(image,rotation)
     time.sleep(1)

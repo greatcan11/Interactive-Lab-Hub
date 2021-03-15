@@ -4,6 +4,7 @@ import subprocess
 import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
+from adafruit_rgb_display.rgb import color565
 import adafruit_rgb_display.ili9341 as ili9341
 import adafruit_rgb_display.st7789 as st7789  # pylint: disable=unused-import
 import adafruit_rgb_display.hx8357 as hx8357  # pylint: disable=unused-import
@@ -37,19 +38,10 @@ disp = st7789.ST7789(
 
 # Create blank image for drawing.
 # Make sure to create image with mode 'RGB' for full color.
-# if disp.rotation % 180 == 90:
-#     height = disp.width  # we swap height/width to rotate it to landscape!
-#     width = disp.height
-# else:
-#     width = disp.width  # we swap height/width to rotate it to landscape!
-#     height = disp.height
-
-#added this
 height = disp.width  # we swap height/width to rotate it to landscape!
 width = disp.height
 image = Image.new("RGB", (width, height))
 rotation = 90
-# rotation = 0
 
 # Get drawing object to draw on image.
 draw = ImageDraw.Draw(image)
@@ -57,34 +49,6 @@ draw = ImageDraw.Draw(image)
 # Draw a black filled box to clear the image.
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image,rotation)
-
-# image = Image.open("red.jpg")
-
-# setup backlight and buttons
-backlight = digitalio.DigitalInOut(board.D22)
-backlight.switch_to_output()
-backlight.value = True
-buttonA = digitalio.DigitalInOut(board.D23)
-buttonB = digitalio.DigitalInOut(board.D24)
-buttonA.switch_to_input()
-buttonB.switch_to_input()
-
-
-# # Scale the image to the smaller screen dimension
-# image_ratio = image.width / image.height
-# screen_ratio = width / height
-# if screen_ratio < image_ratio:
-#     scaled_width = image.width * height // image.height
-#     scaled_height = height
-# else:
-#     scaled_width = width
-#     scaled_height = image.height * width // image.width
-# image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
-
-# # Crop and center the image
-# x = scaled_width // 2 - width // 2
-# y = scaled_height // 2 - height // 2
-# image = image.crop((x, y, x + width, y + height))
 
 # Draw some shapes.
 # First define some constants to allow easy resizing of shapes.
@@ -98,19 +62,43 @@ x = 0
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+font_big = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 28)
 
-# disp.image(image)
+# setup backlight and buttons
+backlight = digitalio.DigitalInOut(board.D22)
+backlight.switch_to_output()
+backlight.value = True
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
+
+pressed = False
 while True:
     # Draw a black filled box to clear the image.
-    draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    # disp.image(image)
+    draw.rectangle((0, 0, width, height), outline=0, fill=(0,0,0))
 
-    #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
-    TIME = strftime("%m/%d/%Y %H:%M:%S")
+    # Flash red if alert hasn't been cleared
+    if not buttonB.value:
+        pressed = True
+    if not pressed and int(time.time())%2 == 0:
+        draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
+        
+    # Extract Date and Time
+    DATE = strftime("%m/%d/%Y")
+    TIME = strftime("%H:%M:%S")
     # Write four lines of text.
     y = top
-    draw.text((x, y), TIME, font=font, fill="#FFFFFF")
-
+    draw.text((x, y), DATE, font=font, fill=(0,0,0))
+    draw.text((x+110, y), TIME, font=font_big, fill=(0,0,0))
+    if not pressed:
+        draw.text((x, y+95), "<-- Clear Alert", font=font, fill=(0,0,0))   
+    if not buttonA.value:
+        draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill=(0,0,0))
+    else:
+        if not pressed:
+            draw.text((x, y+25), "<-- Show Alert", font=font, fill=(0,0,0))
+    
     # Display image.
     disp.image(image,rotation)
     time.sleep(1)
