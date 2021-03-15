@@ -97,10 +97,11 @@ while True:
     draw.text((x, y), DATE, font=font, fill="#FFFFFF")
     draw.text((x, y+20), TIME, font=font, fill="#FFFFFF")
     draw.text((x, y+80), str(pressed), font=font, fill="#FFFFFF")
-    time.sleep(1)
+    # time.sleep(1)
 
-    if not buttonA.value:
+    if buttonA.value:
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill="#FFFFFF")
+        draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0)) 
     
     # Display image.
     disp.image(image,rotation)
