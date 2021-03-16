@@ -78,6 +78,7 @@ buttonB.switch_to_input()
 month, day, year, hour, sec = map(int, time.strftime("%m %d %Y %H %S").split())
 input_min = int(input('Type in bedtime minute:'))
 bedtime = datetime.datetime(year, month, day, hour, input_min, sec)
+print("bedtime: ",bedtime)
 
 while True:
     # Draw a black filled box to clear the image.
@@ -87,6 +88,7 @@ while True:
     TIME = strftime("%m/%d/%Y %H:%M:%S")
     difference = bedtime - datetime.datetime.now()
     difference_split = divmod(difference.total_seconds(),60)
+    print("difference_split: ",difference_split)
     if difference_split[0]>0:
         DIFFERENCE = str(int(difference_split[0])) + ":" + str(int(difference_split[1])) + " till bedtime" 
     else:
