@@ -89,12 +89,13 @@ while True:
     difference = bedtime - datetime.datetime.now()
     difference_split = divmod(difference.total_seconds(),60)
     print("difference_split: ",difference_split)
-    if difference_split[0]>0:
-        DIFFERENCE = str(int(difference_split[0])) + ":" + str(int(difference_split[1])) + " till bedtime" 
+    if difference_split[0]>=0:
+        # DIFFERENCE = str(int(difference_split[0])) + ":" + str(int(difference_split[1])) + " till bedtime" )
+        DIFFERENCE = str(int(difference_split[1])) + " sec till bedtime")
     else:
         new_difference = datetime.datetime.now() - bedtime
         new_difference_split = divmod(new_difference.total_seconds(),60)
-        # DIFFERENCE = str(-1*int(new_difference_split[0])) + ":" + str(int(new_difference_split[1])) + " after bedtime" 
+        # DIFFERENCE = str(-1*int(new_difference_split[0])) + ":" + str(int(new_difference_split[1])) + " after bedtime" )
         DIFFERENCE = str(str(int(new_difference_split[1])) + " sec after bedtime") 
 
 
