@@ -92,7 +92,8 @@ while True:
     else:
         new_difference = datetime.datetime.now() - bedtime
         new_difference_split = divmod(new_difference.total_seconds(),60)
-        DIFFERENCE = str(int(new_difference_split[0])) + ":" + str(int(new_difference_split[1])) + " after bedtime" 
+        # DIFFERENCE = str(-1*int(new_difference_split[0])) + ":" + str(int(new_difference_split[1])) + " after bedtime" 
+        DIFFERENCE = str(str(int(new_difference_split[1])) + " sec after bedtime" 
 
 
     # Write text.
