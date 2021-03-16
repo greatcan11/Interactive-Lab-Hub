@@ -169,15 +169,22 @@ Can you make time interactive? You can look in `screen_test.py` for examples for
 ### Part 1 Storyboard
 > ![](Old_Storyboard.png)
 > This storyboard walks through a second by second screen display of my clock.  
+>
 > In this original design, the first line shows the usual date and time on the first line (as I like seeing this information any time of day).  The second line shows how many seconds relative to the user's bedtime (this can be inputted by the user).  Picture 1 shows an instance before bedtime.  
+>
 > Once it is bedtime (picture 2), the text is updated to state however many seconds after bedtime.  There is also a "GO TO SLEEP!" annunciation that flashes every other second (pictures 2-4).
 
 ### Part 2 Storyboard
 > ![](New_Storyboard.png)
+>
 > This storyboard walks through a second by second screen display of my clock.  
+>
 > In this modified design, the first line only shows date in the top left.  However, I realized that seeing the time would be more significant so I made it a larger text in the top right corner.  I also show the amount of time before bedtime left in the space in between the buttons so it is less cluttered (picture 1).
+>
 > Once it is bedtime, I decided to change the flashing so that the entire screen background color flashes red every other second to indicate it is bedtime (pictures 2-8).  This would be more noticable compared to red text flashing on the background.  I also added indicators with arrows for what each of the buttons do.
+>
 > When the top button is pressed, the alert "GO TO SLEEP!" is displayed while the information for the button disappears (pictures 3-5) and once this button is released, the alert goes away (pictures 3-8).  I thought this was useful because there can be custom alerts in the future and the user may only want to see it on the screen since this alert can make the screen quite cluttered.
+>
 > When the top button is pressed, the alert and flashing go away (pictures 9-10) and all the information for the buttons go away.  At this point, the user must have gotten to sleep since it no longer needs this alert and so the line about how much time is left before bedtime also disappears.  
 
 ## Prep for Part 2
