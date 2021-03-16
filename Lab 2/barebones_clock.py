@@ -87,8 +87,11 @@ while True:
     TIME = strftime("%m/%d/%Y %H:%M:%S")
     difference = bedtime - datetime.datetime.now()
     difference_split = divmod(difference.total_seconds(),60)
-    DIFFERENCE = str(int(difference_split[0])) + " min and " + str(int(difference_split[1])) + " sec left till bedtime" 
-    
+    if difference_split[0]<0:
+        DIFFERENCE = str(int(difference_split[0])) + ":" + str(int(difference_split[1])) + " till bedtime" 
+    else:
+        DIFFERENCE = str(int(difference_split[0])+1) + ":" + str(60-int(difference_split[1])) + " till bedtime" 
+
     # Write text.
     y = top
     draw.text((x, y), TIME, font=font, fill=(255,255,255))
