@@ -90,7 +90,10 @@ while True:
     if difference_split[0]<0:
         DIFFERENCE = str(int(difference_split[0])) + ":" + str(int(difference_split[1])) + " till bedtime" 
     else:
-        DIFFERENCE = str(int(difference_split[0])+1) + ":" + str(60-int(difference_split[1])) + " till bedtime" 
+        new_difference = datetime.datetime.now() - bedtime
+        new_difference_split = divmod(new_difference.total_seconds(),60)
+        DIFFERENCE = str(int(new_difference_split[0])) + ":" + str(int(new_difference_split[1])) + " after bedtime" 
+
 
     # Write text.
     y = top
