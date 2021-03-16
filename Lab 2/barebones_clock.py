@@ -87,7 +87,7 @@ while True:
     TIME = strftime("%m/%d/%Y %H:%M:%S")
     difference = bedtime - datetime.datetime.now()
     difference_split = divmod(difference.total_seconds(),60)
-    if difference_split[0]<0:
+    if difference_split[0]>0:
         DIFFERENCE = str(int(difference_split[0])) + ":" + str(int(difference_split[1])) + " till bedtime" 
     else:
         new_difference = datetime.datetime.now() - bedtime
