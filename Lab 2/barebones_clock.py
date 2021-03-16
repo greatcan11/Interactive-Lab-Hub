@@ -1,5 +1,6 @@
 import time
 from time import strftime, sleep
+import datetime
 import subprocess
 import digitalio
 import board
@@ -73,18 +74,27 @@ buttonB = digitalio.DigitalInOut(board.D24)
 buttonA.switch_to_input()
 buttonB.switch_to_input()
 
-pressed = False
+# Get bedtime from user input
+month, day, year, hour, sec = map(int, time.strftime("%m %d %Y %H %S").split())
+input_min = int(input('Type in bedtime minute:'))
+bedtime = datetime.datetime(year, month, day, hour, input_min, sec)
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=(0,0,0))
         
     # Extract Date and Time
     TIME = strftime("%m/%d/%Y %H:%M:%S")
+    difference = bedtime - datetime.datetime.now()
+    difference_split = divmod(difference.total_seconds(),60)
+    DIFFERENCE = difference_split[0] + " min and " + difference_split[1] + " sec left till bedtime" 
     
-    # Write four lines of text.
+    # Write text.
     y = top
     draw.text((x, y), TIME, font=font, fill=(255,255,255))
-    if int(time.time())%2 == 0:
+    draw.text((x, y+20), DIFFERENCE, font=font, fill=(255,255,255))
+        
+    if difference_split[0]<0 and int(time.time())%2 == 0:
         draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill=(255,0,0))
        
     # Display image.
