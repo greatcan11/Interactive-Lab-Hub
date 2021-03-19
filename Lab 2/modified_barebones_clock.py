@@ -126,7 +126,7 @@ while True:
     else:
         sleep_difference = datetime.datetime.now() - sleeptime
         sleep_split = divmod(sleep_difference.total_seconds(),60)
-        SLEEP = str(int(new_difference_split[1])) + " sec of sleeping"
+        SLEEP = str(int(sleep_difference_split[1])) + " sec of sleeping"
         draw.text((x, y+75), SLEEP, font=font, fill=(255,255,255))
 
     # Always extract and display date and time
