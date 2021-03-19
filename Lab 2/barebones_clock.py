@@ -75,10 +75,9 @@ buttonA.switch_to_input()
 buttonB.switch_to_input()
 
 # Get bedtime from user input
-month, day, year, hour, sec = map(int, time.strftime("%m %d %Y %H %S").split())
-input_min = int(input('Type in bedtime minute:'))
-bedtime = datetime.datetime(year, month, day, hour, input_min, sec)
-print("bedtime: ",bedtime)
+month, day, year = map(int, time.strftime("%m %d %Y").split())
+bedtime_hr, bedtime_min = input('Type in your bedtime: ').split(":")
+bedtime = datetime.datetime(year, month, day, int(bedtime_hr), int(bedtime_min), 0)
 
 while True:
     # Draw a black filled box to clear the image.
@@ -86,9 +85,10 @@ while True:
         
     # Extract Date and Time
     TIME = strftime("%m/%d/%Y %H:%M:%S")
+
+    # Calculate difference in times for timer and write text
     difference = bedtime - datetime.datetime.now()
     difference_split = divmod(difference.total_seconds(),60)
-    print("difference_split: ",difference_split)
     if difference_split[0]>=0:
         DIFFERENCE = str(int(difference_split[1])) + " sec till bedtime"
     else:
@@ -96,8 +96,7 @@ while True:
         new_difference_split = divmod(new_difference.total_seconds(),60)
         DIFFERENCE = str(int(new_difference_split[1])) + " sec after bedtime"
 
-
-    # Write text.
+    # Write other text.
     y = top
     draw.text((x, y), TIME, font=font, fill=(255,255,255))
     draw.text((x, y+20), DIFFERENCE, font=font, fill=(255,255,255))
