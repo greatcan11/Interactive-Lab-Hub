@@ -190,14 +190,15 @@ Can you make time interactive? You can look in `screen_test.py` for examples for
 ## Prep for Part 2
 
 1. Pick up remaining parts for kit. 
-> Finally received parts last week!
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
-> Gave feedback to Caitlin Stanton.
+
+> I received feedback from Caitlin Stanton and Priya Kattappurath and both have mentioned that this is a device that they could benefit from.  Additionally, they like how the flashing alert is displayed and so I will make sure to keep that feature.  Priya mentioned that it would be cool to also have a timer that indicates how much time the user has gone to sleep, which is when the user clears the alert.  I really liked this idea because there is always some type of timer that is relative to the bedtime or sleeping, aside from the actual date and time.  Comparing this idea to my original one, I would change the storyboard pictures 9 and 10 so that there would be an aunnciation that displays how much time has passed since the user has slept.  That timer starts when the user clears the alert. 
+>
+> With this feedback in mind, here are the modified storyboard pictures corresopnding to 9 and 10:
+> ![](AfterSleeping.png)
 
 # Lab 2 Part 2
-
-> Unable to do since I have not received RPi 4.
 
 Pull Interactive Lab Hub updates to your repo.
 
@@ -207,4 +208,7 @@ As always, make sure you document contributions and ideas from others explicitly
 
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
 
+> [Here](https://drive.google.com/file/d/1H0l2vuWfrucWwAL0lFtB_lI7tenLwsE0/view?usp=sharing) is the video for part 2 of this lab.  The code to implement this is from [modified_barebones_clock.py](modified_barebones_clock.py).  It adds more logic on top of the [barebones_clock.py](barebones_clock.py) file as there is now a timer needed for after the alert is cleared.  Another interesting aspect to implement is to have a flashing red background.  I had to make sure the background was drawn first, before any of the text or else none of the text can be seen.  I also had to add some logic with the buttons to display certain annunciations and import the datetime library as it is helpful in calculating time differences for the timers.
+>
+> Overall, I enjoyed constructing this device, especially since it was very personal and relatable to something I would want to interact with.  It also made me think more about how I have recently shifted my perspective in how I view time.  I used to view time with how many hours of work I have before I can go to sleep.  Now, as someone trying to prioritize going to bed at a reasonable time, I have shifted this perspectie to see how many hours I have before I sleep to do my work.
 
