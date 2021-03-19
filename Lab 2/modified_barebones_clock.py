@@ -85,56 +85,28 @@ sleeptime = bedtime
 # Store whether "Cleart Alter" button has been pressed
 pressed = False
 
+# Set y variable for displaying iamge
+y = top
+
 while True:
     # Update variables once "Clear Alert" has been pressed
     if not buttonB.value:
         pressed = True
-        sleeptime = datetime.datetime()
+        sleeptime = datetime.datetime.now()
 
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=(0,0,0))
 
-    # Flash red if alert hasn't been cleared
-    if not pressed and int(time.time())%2 == 0:
-        draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))  # red
-        
-    # Extract Date and Time
-    DATE = strftime("%m/%d/%Y")
-    TIME = strftime("%H:%M:%S")
-
-    # Calculate difference in times for timer
-    difference = bedtime - datetime.datetime.now()
-    difference_split = divmod(difference.total_seconds(),60)
-    if difference_split[0]>=0:
-        DIFFERENCE = str(int(difference_split[1])) + " sec till bedtime"
-    else:
-        new_difference = datetime.datetime.now() - bedtime
-        new_difference_split = divmod(new_difference.total_seconds(),60)
-        DIFFERENCE = str(int(new_difference_split[1])) + " sec after bedtime"
-
-
-    # Write other text
-    y = top
-    draw.text((x, y), DATE, font=font, fill=(255,255,255))
-    draw.text((x+110, y), TIME, font=font_big, fill=(255,255,255))
-
-    # After clearing alert (and going to sleep)
-    if pressed:
-        sleep_difference = datetime.datetime.now() - sleeptime
-        sleep_split = divmod(sleep_difference.total_seconds(),60)
-        draw.text((x+75, y), SLEEP, font=font, fill=(255,255,255))
-        SLEEP = str(int(new_difference_split[1])) + " sec of sleeping"
-        draw.text((x+75, y), SLEEP, font=font, fill=(255,255,255))
-
-    # Before bedtime
-    else:
+    # Before sleeping
+    if not pressed:
         difference = bedtime - datetime.datetime.now()
         difference_split = divmod(difference.total_seconds(),60)
-        if difference_split[0]>=0:
-            DIFFERENCE = str(int(difference_split[1])) + " sec till bedtime"
 
-        # After bedtime (but before sleeping)
-        else:
+        # After bedtime 
+        if difference_split[0]<0:
+            # Flash red if alert hasn't been cleared every other second
+            if int(time.time())%2 == 0:
+                draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))
             new_difference = datetime.datetime.now() - bedtime
             new_difference_split = divmod(new_difference.total_seconds(),60)
             DIFFERENCE = str(int(new_difference_split[1])) + " sec after bedtime"
@@ -143,8 +115,25 @@ while True:
                 draw.text((x, y+25), "<-- Show Alert", font=font, fill=(255,255,255))
             else:
                 draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill=(255,255,255))
+
+        # Before bedtime
+        else:
+            DIFFERENCE = str(int(difference_split[1])) + " sec till bedtime"
         
-        draw.text((x+75, y), DIFFERENCE, font=font, fill=(255,255,255))
+        draw.text((x, y+75), DIFFERENCE, font=font, fill=(255,255,255))
+    
+    # Sleeping (after clearing alert)
+    else:
+        sleep_difference = datetime.datetime.now() - sleeptime
+        sleep_split = divmod(sleep_difference.total_seconds(),60)
+        SLEEP = str(int(new_difference_split[1])) + " sec of sleeping"
+        draw.text((x, y+75), SLEEP, font=font, fill=(255,255,255))
+
+    # Always extract and display date and time
+    DATE = strftime("%m/%d/%Y")
+    TIME = strftime("%H:%M:%S")
+    draw.text((x, y), DATE, font=font, fill=(255,255,255))
+    draw.text((x+110, y), TIME, font=font_big, fill=(255,255,255))
     
     # Display image.
     disp.image(image,rotation)
