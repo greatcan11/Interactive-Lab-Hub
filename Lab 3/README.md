@@ -129,7 +129,8 @@ WARNING:root:Removed streaming client ('192.168.1.6', 49544): name 'output' is n
 ```
 >
 >This is because the output had to be global, as described in this [link](https://raspberrypi.stackexchange.com/questions/99756/cannot-turn-web-streaming-into-a-function).
-
+>
+>Next, we were still having issues with using espeak because the value from the button was not being obtained properly with python.  We saw that there is a simple way to do this with flask.  By wanting to use flask for this, we also tried using the Picamera with flask.  However, we ran into an issue where this started to not work either.  Finally, after reading this [link](https://github.com/waveform80/picamera/issues/488), we learned that something else was using the Picamera so after a reboot, everything was working again.
 
 
 
