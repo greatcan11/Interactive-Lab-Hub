@@ -87,7 +87,11 @@ The system should:
 
 >Our system is inspired by our own lives, as when we try to do work, we often find ourselves procrastinating.  What if there was a system that would remind us to not procrastinate so that we could work when we are supposed to?
 >
->We have come up with “Bill,” an accountable friend who helps the user not procrastinate.  >Whenever the user is not doing work, Bill will remind the user to do it.  This system will have a Picamera so that the Wizard can see whether the user is doing work or not via a livestream and talk to prompt the user to do work.  Below is the storyboard, which we will explain each picture in detail below.
+>We have come up with “Bill,” an accountable friend who helps the user not procrastinate.  >Whenever the user is not doing work, Bill will remind the user to do it.  This system will have a Picamera so that the Wizard can see whether the user is doing work or not via a livestream and talk to prompt the user to do work.  
+
+### Storyboard
+
+>Below is the storyboard, which we will explain each picture in detail below.
 >
 > ![](storyboard.png)
 >
@@ -107,7 +111,7 @@ The system should:
 >After trying to integrate the code related to the server and dspeech, we were getting an error at this line:
 >
 ```
->#self.send_header('Last-Modified', self.date_time_string(time()))
+#self.send_header('Last-Modified', self.date_time_string(time()))
 ```
 >
 >However, when we commented the following line of code, it worked and we were able to start the livestream after “Bill” is recognized.
@@ -116,10 +120,12 @@ The system should:
 >
 >![](debug_espeek.jpeg)
 >
->After realizing that there was some other program running on that particular port, we were able to kill that program, and we were able to integrate espeek.  Afterwards, we encountered the following error:
+>After realizing that there was some other program running on that particular port, we were able to kill that program, and we were able to integrate espeek.  
+>
+>Afterwards, we encountered the following error:
 >
 ```
->WARNING:root:Removed streaming client ('192.168.1.6', 49544): name 'output' is not defined
+WARNING:root:Removed streaming client ('192.168.1.6', 49544): name 'output' is not defined
 ```
 >
 >This is because the output had to be global, as described in this [link](https://raspberrypi.stackexchange.com/questions/99756/cannot-turn-web-streaming-into-a-function).
