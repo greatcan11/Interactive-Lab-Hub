@@ -106,9 +106,9 @@ The system should:
 >
 >After trying to integrate the code related to the server and dspeech, we were getting an error at this line:
 >
->'''
+```
 >#self.send_header('Last-Modified', self.date_time_string(time()))
->'''
+```
 >
 >However, when we commented the following line of code, it worked and we were able to start the livestream after “Bill” is recognized.
 >
@@ -118,9 +118,9 @@ The system should:
 >
 >After realizing that there was some other program running on that particular port, we were able to kill that program, and we were able to integrate espeek.  Afterwards, we encountered the following error:
 >
->'''
+```
 >WARNING:root:Removed streaming client ('192.168.1.6', 49544): name 'output' is not defined
->'''
+```
 >
 >This is because the output had to be global, as described in this [link](https://raspberrypi.stackexchange.com/questions/99756/cannot-turn-web-streaming-into-a-function).
 
