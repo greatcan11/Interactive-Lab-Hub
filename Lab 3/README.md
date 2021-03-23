@@ -90,6 +90,7 @@ Create a system that runs on the Raspberry Pi that takes in one or more sensors 
 ## Share your idea sketches with Zoom Room mates and get feedback
 
 *what was the feedback? Who did it come from?*
+> Sujith's feedback: "I really like your groups idea and think I could personally use it haha. The only suggestion I have is to include key words in deepspeech that indicate that the user is not working. Then, Bill/the friend would just be notified and be able to help."
 
 ## Prototype your system
 
