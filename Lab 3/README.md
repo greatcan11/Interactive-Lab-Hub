@@ -168,7 +168,9 @@ TypeError: The view function did not return a valid response.
 ```
 >Though this didn’t impair the functionality of Bill, we wanted to make sure that all of our loose ends were tied up. [This post](https://stackoverflow.com/questions/25034123/flask-value-error-view-function-did-not-return-a-response) told us that the POST request method “handle_speak()” in app.py needed to return either a function or a string, so we adjusted the method accordingly.
 >
->To make Bill more presentable, we referenced [this project from ECE 5725](https://courses.ece.cornell.edu/ece5990/ECE5725_Spring2020_Projects/May_15_Demo/Smart%20Home%20Security/ak754_tss86_Monday/index.html#results) for their HTML and CSS formatting.
+>To make Bill more presentable, we referenced [this project from ECE 5725](https://courses.ece.cornell.edu/ece5990/ECE5725_Spring2020_Projects/May_15_Demo/Smart%20Home%20Security/ak754_tss86_Monday/index.html#results) for their HTML and CSS formatting.  Below is how our final interface looks:
+>
+>![](BillGUI.png)
 >
 >For more visual stimuli, a green LED (connected to an I2C button) flares brightly when Bill is speaking with the user. We favored green over red in order to make Bill seem less antagonistic and aggressive.
 >
