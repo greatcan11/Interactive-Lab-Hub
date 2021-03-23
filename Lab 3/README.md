@@ -68,6 +68,24 @@ Create a system that runs on the Raspberry Pi that takes in one or more sensors 
 
 1. Sketch ideas for what you'll work on in lab on Wednesday.
 
+### System Idea
+
+>Our system is inspired by our own lives, as when we try to do work, we often find ourselves procrastinating.  What if there was a system that would remind us to not procrastinate so that we could work when we are supposed to?
+>
+>We have come up with “Bill,” an accountable friend who helps the user not procrastinate.  Whenever the user is not doing work, Bill will remind the user to do it.  This system will have a Picamera so that the Wizard can see whether the user is doing work or not via a livestream and talk to prompt the user to do work.  
+
+### Storyboard
+
+>Below is the storyboard, which we will explain each picture in detail below.
+>
+> ![](storyboard.png)
+>
+>The first picture shows how Bill will initialize.  Dspeech will always be running to listen to the user.  When the user says “Bill,” the Picamera will turn on and the camera live stream will start.  This is similar to when people are used to interacting with their Google Home and say “Hey Google” or their AmazonAlexa and say “Alexa.”  We chose “Bill” for the name instead of a device name such as “Anti-Procrastinator” because users will feel more comfortable talking to a person as they are doing their work (or procrastinating).  Additionally, after the user says “I will start work,” espeak will turn on so the Wizard can start to tell the user to go back to work if the user procrastinates.
+>
+>The second picture shows the user procrastinating by seeing a meme on facebook and as Bill sees and hears this, Bill will say, “STOP.”
+>
+> The third picture shows how the user is reminded of going back to work, and so his laptop screen goes back to all the documents that need to be worked on.
+
 ## Share your idea sketches with Zoom Room mates and get feedback
 
 *what was the feedback? Who did it come from?*
@@ -83,23 +101,6 @@ The system should:
 
 *Include videos or screencaptures of both the system and the controller.*
 
-### System Overview
-
->Our system is inspired by our own lives, as when we try to do work, we often find ourselves procrastinating.  What if there was a system that would remind us to not procrastinate so that we could work when we are supposed to?
->
->We have come up with “Bill,” an accountable friend who helps the user not procrastinate.  >Whenever the user is not doing work, Bill will remind the user to do it.  This system will have a Picamera so that the Wizard can see whether the user is doing work or not via a livestream and talk to prompt the user to do work.  
-
-### Storyboard
-
->Below is the storyboard, which we will explain each picture in detail below.
->
-> ![](storyboard.png)
->
->The first picture shows how Bill will initialize.  Dspeech will always be running to listen to the user.  When the user says “Bill,” the Picamera will turn on and the camera live stream will start.  This is similar to when people are used to interacting with their Google Home and say “Hey Google” or their AmazonAlexa and say “Alexa.”  We chose “Bill” for the name instead of a device name such as “Anti-Procrastinator” because users will feel more comfortable talking to a person as they are doing their work (or procrastinating).  Additionally, after the user says “I will start work,” espeak will turn on so the Wizard can start to tell the user to go back to work if the user procrastinates.
->
->The second picture shows the user procrastinating by seeing a meme on facebook and as Bill sees and hears this, Bill will say, “STOP.”
->
-> The third picture shows how the user is reminded of going back to work, and so his laptop screen goes back to all the documents that need to be worked on.
 
 ### Implementing Bill
 
