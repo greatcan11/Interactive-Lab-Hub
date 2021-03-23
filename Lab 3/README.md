@@ -1,5 +1,7 @@
 # You're a wizard, Grace
 
+I collaborated with Priya Kattappurath and Caitlin Stanton on this project.  All the code can be found [here](https://github.com/caitlinstanton/Interactive-Lab-Hub/tree/Spring2021/Lab%203).
+
 <img src="https://pbs.twimg.com/media/Cen7qkHWIAAdKsB.jpg" height="400">
 
 In this lab, we want you to practice wizarding an interactive device as discussed in class. We will focus on audio as the main modality for interaction but there is no reason these general techniques can't extend to video, haptics or other interactive mechanisms. In fact, you are welcome to add those to your project if they enhance your design.
