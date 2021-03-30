@@ -130,6 +130,10 @@ Make a paper display for your project that communicates the state of the Pi and 
  
 **a. Document the design for your paper display.** (e.g. if you had to make it again from scratch, what information would you need?). Include interim iterations (or at least tell us about them).
 
+> My paper display is to show the game "Mancala to the Beat" where the players have to play mancala with the catch of picking up and dropping mancala pieces to the beat of the song.  Each time they do this correctly, they receive a point.  Each time they do not, they lose a point.  Below is the paper prototype using a piece of paper for screen (as I am in Ithaca and waiting for the OLED screens to arrive) and a container the mancala wells.  The screen will display the name of the game, the points for each respective player on the sides of the screen, and any annunciations in the middle such as "Player 1's Turn" or "Player 2 wins!" throughout the game.  The container works perfectly as it used to hold mochi ice cream and so each of the wells are the perfect size for this miniature version of mancala.
+>
+> ![](Graceprototype1.jpg)
+
 **b. Make a video of your paper display in action.**
 
 **c. Explain the rationale for the design.** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
