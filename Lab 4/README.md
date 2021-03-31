@@ -130,13 +130,29 @@ Make a paper display for your project that communicates the state of the Pi and 
  
 **a. Document the design for your paper display.** (e.g. if you had to make it again from scratch, what information would you need?). Include interim iterations (or at least tell us about them).
 
-> My paper display is to show the game "Mancala to the Beat" where the players have to play mancala with the catch of picking up and dropping mancala pieces to the beat of the song.  Each time they do this correctly, they receive a point.  Each time they do not, they lose a point.  Below is the paper prototype using a piece of paper for screen (as I am in Ithaca and waiting for the OLED screens to arrive) and a container the mancala wells.  The screen will display the name of the game, the points for each respective player on the sides of the screen, and any annunciations in the middle such as "Player 1's Turn" or "Player 2 wins!" throughout the game.  The container works perfectly as it used to hold mochi ice cream and so each of the wells are the perfect size for this miniature version of mancala.
->
+> #### Original Design
+> Our paper display is to show the game "Mancala to the Beat" where the players have to play mancala with the catch of picking up and dropping mancala pieces to the beat of the song.  Each time they do this correctly, they receive a point.  Each time they do not, they lose a point.  Below is the paper prototype using a piece of paper for screen (as I am in Ithaca and waiting for the OLED screens to arrive) and a container the mancala wells.  The screen will display the name of the game, the points for each respective player on the sides of the screen, and any annunciations in the middle such as "Player 1's Turn" or "Player 2 wins!" throughout the game.  
+
 > ![](Graceprototype1.jpg)
+>
+> #### New Design
+> After gathering feedback from others, we decided to change the game slightly so it would be a an "imaginary mancala."  We realized it would be hard to keep track of all the beads as they are easy to lose and so we will have a display that corresponds to how many beads are in each of the mancala wells. 
+>
+> The person playing will tap the bottom of the mancala well a certain number of times in order to communicate the type of action he or she is doing as follows:  
+> - One tap is dropping a bead
+> - Two taps is picking up the bead(s) in the well
+
+> There will also be buttons in the middle for each player to shown when their turn is over.
+>
+> Below is how the paper prototype looks like with what imaginary beads (or bananas) would look like, even though in reality, these wells for the mancala will be empty:
+> ![](paper_prototype_setup.jpeg)
+
 
 **b. Make a video of your paper display in action.**
+> [Here](https://drive.google.com/file/d/1Fo1OpunG8CRFBEpOIL_axbg8AydldyOE/view?usp=sharing) is the video that shows our paper prototype as described in part a.
 
 **c. Explain the rationale for the design.** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+> We want this game to be portable and small since mancala boards are usually not too big.  The beads are also not too big so these well sizes are a good size.  Additionally, there are baskets that are bigger than the manacala wells that represent the total points each person has.  These are bigger than the wells since they will hold more beads.
 
 ### Part D
 ### Materiality
@@ -147,5 +163,15 @@ Design a system with the Pi and anything from your kit with a focus on form, and
 
 **a. document the material prototype.** Include candidates that were considered even if they were set aside later.
 
+> We will use sturdy plastic for each of the mancala wells and strong origami paper boxes for the ends.  We used [this origami tutorial](https://www.youtube.com/watch?v=LUEwM_ZiFIg) to make the paper boxes and it looks aesthetically pleasing since everything is white.
+
 **b. explain the selection.**
+
+> We want to have a sturdy material for the wells so that it would not be crushed easily touching the The container works perfectly as it used to hold mochi ice cream and so each of the wells are the perfect size for this miniature version of mancala.
+>
+>#### Constructing the Physical Prototype
+>
+>#### Implementing the Physical Prototype
+>
+
 
