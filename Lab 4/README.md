@@ -162,9 +162,11 @@ Design a system with the Pi and anything from your kit with a focus on form, and
 > Our original paper display is to show the game "Mancala to the Beat" where the players have to play mancala with the catch of picking up and dropping mancala pieces to the beat of the song.  Each time they do this correctly, they receive a point.  Each time they do not, they lose a point.  Our prototype wil look like a Mancala board that has multiple wells and at the ends, there will be bigger containers to hold the beads.  Below is a sketch where the circles are the wells and the recntalges at the ends are for the bigger containers to hold the beads to keep track of each person's points.  The rectnangle in the middle is the OLED display that will show the beat to the song.  The screen will also display the name of the game, the points for each respective player on the sides of the screen, and any annunciations in the middle such as "Player 1's Turn" or "Player 2 wins!" throughout the game.  
 >
 > Here is the sketch of our original design idea:
+>
 > ![](MancalaGUI_OLD.png)
 >
 > Here is part of our original prototype with an unused container with wells that would work well: 
+>
 > ![](Graceprototype1.jpg)
 >
 > #### New Design
@@ -177,16 +179,20 @@ Design a system with the Pi and anything from your kit with a focus on form, and
 > Instead of an OLED display in the center, there will be buttons for each player to shown when their turn is over.  There will be a separate GUI apart from the board to show the players where the beads are based on their taps to help with imagining and keep track of the imaginary mancala beads.
 >
 > Below is the sketch of the new design:
+>
 > ![](MancalaGUI.png)
 >
 > Below is how the paper prototype looks like with what imaginary beads (or bananas) would look like, even though in reality, these wells for the mancala will be empty:
+>
 > ![](paper_prototype_setup.jpeg)
 >
 > #### Materiality 
 > We will use sturdy plastic for each of the mancala wells and strong origami paper boxes for the ends.  We used [this origami tutorial](https://www.youtube.com/watch?v=LUEwM_ZiFIg) to make the paper boxes and it looks aesthetically pleasing since everything is white.  Below is a picture of one of the origami boxes.  Note that for our final prototype, we used a total of three boxes where another one of these boxes to put underneath the Mancala board so that it was elevated slightly to not interfere with the capacitive sensor connections.
+>
 > ![](origami_box.jpg)
 >
 >We want to have a sturdy material for the wells so that it would not be crushed easily touching the The container works perfectly as it used to hold mochi ice cream and so each of the wells are the perfect size for this miniature version of mancala.  Below is a picture showing how our final prototype looks like, just as how a mancala board looks like.  The "Works Like" section will go into more technical details of how the prototype was implemented.
+>
 > ![](final_prototype.jpg)
 >
 > #### Auditory Enhancements
