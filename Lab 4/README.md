@@ -183,8 +183,13 @@ Design a system with the Pi and anything from your kit with a focus on form, and
 > ![](paper_prototype_setup.jpeg)
 >
 > #### Materiality 
-> We will use sturdy plastic for each of the mancala wells and strong origami paper boxes for the ends.  We used [this origami tutorial](https://www.youtube.com/watch?v=LUEwM_ZiFIg) to make the paper boxes and it looks aesthetically pleasing since everything is white.  We want to have a sturdy material for the wells so that it would not be crushed easily touching the The container works perfectly as it used to hold mochi ice cream and so each of the wells are the perfect size for this miniature version of mancala.
+> We will use sturdy plastic for each of the mancala wells and strong origami paper boxes for the ends.  We used [this origami tutorial](https://www.youtube.com/watch?v=LUEwM_ZiFIg) to make the paper boxes and it looks aesthetically pleasing since everything is white.  Below is a picture of one of the origami boxes.  Note that for our final prototype, we used a total of three boxes where another one of these boxes to put underneath the Mancala board so that it was elevated slightly to not interfere with the capacitive sensor connections.
+> ![](origami_box.jpg)
 >
+>We want to have a sturdy material for the wells so that it would not be crushed easily touching the The container works perfectly as it used to hold mochi ice cream and so each of the wells are the perfect size for this miniature version of mancala.  Below is a picture showing how our final prototype looks like, just as how a mancala board looks like.  The "Works Like" section will go into more technical details of how the prototype was implemented.
+> ![](final_prototype.jpg)
+>
+> #### Auditory Enhancements
 > If we could extend this prototype to a more finished product, we would like to use smooth wooden board with imaginary marbles, as that is the nostalgia Mancala brings with the set we all played with when we were younger.  Being able to "pick up" and "drop" these imaginary marbles on a smooth surface is a satisfying experience so the surface should be smooth, rather than rough.  Due to our limitations, we prototyped using plastic and paper instead of wood.  However, to simulate the sounds of marbles dropping or being picked up, we added those sounds that would be played based on the taps.  This would simulate picking up these rather "ghost marbles" since they make sounds based on the user interaction with the mancala board.
 
 > ### "Works Like"
