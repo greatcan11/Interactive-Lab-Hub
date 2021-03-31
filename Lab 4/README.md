@@ -130,6 +130,32 @@ Make a paper display for your project that communicates the state of the Pi and 
  
 **a. Document the design for your paper display.** (e.g. if you had to make it again from scratch, what information would you need?). Include interim iterations (or at least tell us about them).
 
+**b. Make a video of your paper display in action.**
+
+**c. Explain the rationale for the design.** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+> We want this game to be portable and small since mancala boards are usually not too big.  The beads are also not too big so these well sizes are a good size.  Additionally, there are baskets that are bigger than the manacala wells that represent the total points each person has.  These are bigger than the wells since they will hold more beads.
+
+### Part D
+### Materiality
+
+**Open Ended**: We are putting very few constraints on this part but we want you to get creative.
+
+Design a system with the Pi and anything from your kit with a focus on form, and materiality. The "stuff" that enclose the system should be informed by the desired interaction. What would a computer made of rocks be like? How would an ipod made of grass behave? Would a roomba made of gold clean your floor any differently?
+
+**a. document the material prototype.** Include candidates that were considered even if they were set aside later.
+
+**b. explain the selection.**
+
+### Deliverables for this lab are:
+
+1. Sketches/photos of device designs
+2. "Looks like" prototypes: show us what how the device should look, feel, sit, weigh, etc.
+3. "Works like" prototypes: show us what the device can do
+4. "Acts like" prototypes: videos/storyboards/other means of showing how a person would interact with the device
+5. Submit these in the lab 4 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same for each person in the group.
+
+> ### "Looks like"
+>
 > #### Original Design
 > Our paper display is to show the game "Mancala to the Beat" where the players have to play mancala with the catch of picking up and dropping mancala pieces to the beat of the song.  Each time they do this correctly, they receive a point.  Each time they do not, they lose a point.  Below is the paper prototype using a piece of paper for screen (as I am in Ithaca and waiting for the OLED screens to arrive) and a container the mancala wells.  The screen will display the name of the game, the points for each respective player on the sides of the screen, and any annunciations in the middle such as "Player 1's Turn" or "Player 2 wins!" throughout the game.  
 
@@ -147,40 +173,12 @@ Make a paper display for your project that communicates the state of the Pi and 
 > Below is how the paper prototype looks like with what imaginary beads (or bananas) would look like, even though in reality, these wells for the mancala will be empty:
 > ![](paper_prototype_setup.jpeg)
 
-
-**b. Make a video of your paper display in action.**
 > [Here](https://drive.google.com/file/d/1Fo1OpunG8CRFBEpOIL_axbg8AydldyOE/view?usp=sharing) is the video that shows our paper prototype as described in part a.
-
-**c. Explain the rationale for the design.** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
-> We want this game to be portable and small since mancala boards are usually not too big.  The beads are also not too big so these well sizes are a good size.  Additionally, there are baskets that are bigger than the manacala wells that represent the total points each person has.  These are bigger than the wells since they will hold more beads.
-
-### Part D
-### Materiality
-
-**Open Ended**: We are putting very few constraints on this part but we want you to get creative.
-
-Design a system with the Pi and anything from your kit with a focus on form, and materiality. The "stuff" that enclose the system should be informed by the desired interaction. What would a computer made of rocks be like? How would an ipod made of grass behave? Would a roomba made of gold clean your floor any differently?
-
-**a. document the material prototype.** Include candidates that were considered even if they were set aside later.
 
 > We will use sturdy plastic for each of the mancala wells and strong origami paper boxes for the ends.  We used [this origami tutorial](https://www.youtube.com/watch?v=LUEwM_ZiFIg) to make the paper boxes and it looks aesthetically pleasing since everything is white.
 
-**b. explain the selection.**
-
 > We want to have a sturdy material for the wells so that it would not be crushed easily touching the The container works perfectly as it used to hold mochi ice cream and so each of the wells are the perfect size for this miniature version of mancala.
+
+> ### "Works Like"
 >
->#### Constructing the Physical Prototype
->
->#### Implementing the Physical Prototype
->
-
-### Deliverables for this lab are:
-
-Sketches/photos of device designs
-
-1. "Looks like" prototypes: show us what how the device should look, feel, sit, weigh, etc.
-2. "Works like" prototypes: show us what the device can do
-3. "Acts like" prototypes: videos/storyboards/other means of showing how a person would interact with the device
-4. Submit these in the lab 4 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same for each person in the group.
-
-
+> ### "Acts Like"
