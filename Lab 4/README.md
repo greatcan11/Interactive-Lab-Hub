@@ -155,6 +155,9 @@ Design a system with the Pi and anything from your kit with a focus on form, and
 
 > ### "Looks like"
 >
+> #### Rationale for Design
+> Our design is to bring back nostalgic memories of Mancala boards that fir in a child's lap.  Thus, we decided to make a prototype that models this, having it to be relatively small, light, and ultimately so this game can be brought anywhere.
+>
 > #### Original Design Idea
 > Our original paper display is to show the game "Mancala to the Beat" where the players have to play mancala with the catch of picking up and dropping mancala pieces to the beat of the song.  Each time they do this correctly, they receive a point.  Each time they do not, they lose a point.  Our prototype wil look like a Mancala board that has multiple wells and at the ends, there will be bigger containers to hold the beads.  Below is a sketch where the circles are the wells and the recntalges at the ends are for the bigger containers to hold the beads to keep track of each person's points.  The rectnangle in the middle is the OLED display that will show the beat to the song.  The screen will also display the name of the game, the points for each respective player on the sides of the screen, and any annunciations in the middle such as "Player 1's Turn" or "Player 2 wins!" throughout the game.  
 >
@@ -182,7 +185,7 @@ Design a system with the Pi and anything from your kit with a focus on form, and
 > #### Materiality 
 > We will use sturdy plastic for each of the mancala wells and strong origami paper boxes for the ends.  We used [this origami tutorial](https://www.youtube.com/watch?v=LUEwM_ZiFIg) to make the paper boxes and it looks aesthetically pleasing since everything is white.  We want to have a sturdy material for the wells so that it would not be crushed easily touching the The container works perfectly as it used to hold mochi ice cream and so each of the wells are the perfect size for this miniature version of mancala.
 >
-> If we could extend this prototype to a more finished product, we would like to use wooden board with imaginary marbles, as that is the nostalgia Mancala brings with the set we all played with when we were younger.  Due to our limitations, we prototyped using plastic and paper instead of wood.  However, to simulate the sounds of marbles dropping or being picked up, we added those sounds that would be played based on the taps.  This would simulate picking up these rather "ghost marbles" since they make sounds based on the user interaction with the mancala board.
+> If we could extend this prototype to a more finished product, we would like to use smooth wooden board with imaginary marbles, as that is the nostalgia Mancala brings with the set we all played with when we were younger.  Being able to "pick up" and "drop" these imaginary marbles on a smooth surface is a satisfying experience so the surface should be smooth, rather than rough.  Due to our limitations, we prototyped using plastic and paper instead of wood.  However, to simulate the sounds of marbles dropping or being picked up, we added those sounds that would be played based on the taps.  This would simulate picking up these rather "ghost marbles" since they make sounds based on the user interaction with the mancala board.
 
 > ### "Works Like"
 
