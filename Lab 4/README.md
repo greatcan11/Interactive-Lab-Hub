@@ -198,6 +198,8 @@ Design a system with the Pi and anything from your kit with a focus on form, and
 > #### Auditory Enhancements
 > If we could extend this prototype to a more finished product, we would like to use smooth wooden board with imaginary marbles, as that is the nostalgia Mancala brings with the set we all played with when we were younger.  Being able to "pick up" and "drop" these imaginary marbles on a smooth surface is a satisfying experience so the surface should be smooth, rather than rough.  Due to our limitations, we prototyped using plastic and paper instead of wood.  However, to simulate the sounds of marbles dropping or being picked up, we added those sounds that would be played based on the taps.  This would simulate picking up these rather "ghost marbles" since they make sounds based on the user interaction with the mancala board.
 
+> Full documentation of README.md can be found [here](https://github.com/caitlinstanton/Interactive-Lab-Hub/tree/Spring2021/Lab%204).
+
 > ### "Works Like"
 
 

@@ -9,5 +9,5 @@ Please place links here to the README.md's for each of your labs here:
 
 [Lab 3. You're a Wizard (with Priya Kattappurath and Caitlin Stanton)](https://github.com/caitlinstanton/Interactive-Lab-Hub/tree/Spring2021/Lab%203)
 
-[Lab 4. Ph-UI!!!](Lab%204/)
+[Lab 4. Ph-UI!!! (with Priya Kattappurath and Caitlin Stanton)](https://github.com/caitlinstanton/Interactive-Lab-Hub/tree/Spring2021/Lab%204)
 
