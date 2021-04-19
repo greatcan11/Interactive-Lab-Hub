@@ -81,9 +81,6 @@ def is_red(img):
     # Pause
     time.sleep(.5)
 
-
-
-
 # Sample images
 is_red('red.jpg')
 is_red('pink.jpg')

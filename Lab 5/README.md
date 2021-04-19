@@ -89,10 +89,15 @@ Additional filtering and analysis can be done on the sensors that were provided 
 Using the set up from the [Lab 3 demo](https://github.com/FAR-Lab/Interactive-Lab-Hub/tree/Spring2021/Lab%203/demo) and the accelerometer, try the following:
 
 **1. Set up threshold detection** Can you identify when a signal goes above certain fixed values?
+> We decided to process images taken by the PiCam, classifying them by saying whether the picture had a red tint or not.  We can extract the RGB values and see whether this R value goes underneath a certain value, which means that the picture does not have a red tint since the value is not very high.  The images that we are using are shown in the repo, and the code for this is found in [PartA.py](partA.py).  Note that we referenced [dispImage.py](dispImage.py) to display the image on the OLED screen.  Below is a snippet of the output when we run this file:
+>
+> ![](PartATerminal.jpg)
 
 **2. Set up averaging** Can you average your signal in N-sample blocks? N-sample running average?
+> We can average the signal by specifying N number of samples, which we made N to be the number of pixels in the image.
 
 **3. Set up peak detection** Can you identify when your signal reaches a peak and then goes down?
+> We can identify when the signal holds certain ranges of values by showing the RGB values and plotting them to see where the peak ranges can be.  
 
 Include links to your code here, and put the code for these in your repo--they will come in handy later.
 
