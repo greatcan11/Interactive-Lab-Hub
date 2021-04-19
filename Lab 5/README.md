@@ -135,32 +135,32 @@ Try out different interactions outputs and inputs.
 
 Now flight test your interactive prototype and **note your observations**:
 For example:
-> 1. When does it what it is supposed to do?
+> **1. When does it what it is supposed to do?**
 > In good lighting, and when the ingredient is well centered and isolated in the PiCam frame, it is able to detect the difference between cashews, almonds, and craisins.
 >
-> 2. When does it fail?
+> **2. When does it fail?**
 > The first iteration fails when the ingredients are mixed, when the lighting is poor, or when random objects are disrupting the view of the PiCam.
 >
-> 3. When it fails, why does it fail?
+> **3. When it fails, why does it fail?**
 > The model is trained on individual pictures of almonds, cashews, and craisins, with very similar lighting and background in all images. Thus, the model is not robust enough to compensate when the lighting is unexpected or multiple objects are in frame.
 >
-> 4. Based on the behavior you have seen, what other scenarios could cause problems?
+> **4. Based on the behavior you have seen, what other scenarios could cause problems?**
 > A scenario that could cause problems is if the user uses a plate that is a different color than the photos the model is trained on. Especially if the plate is more similar to the colors of the specific ingredients, it could skew the results to be biased toward a certain ingredient. 
 
 **Think about someone using the system. Describe how you think this will work.**
 
 > The visual identification provided by this system can be highly beneficial for blind and low-vision people. In the world of COVID-19, we are increasingly cautious about hygiene and food safety. This means that people are not able to use their sense of touch as freely as they used to. This system can be used to identify which ingredient is which in a batch of trail mix, without requiring the user to touch the questionable ingredients. 
 >
->1. Are they aware of the uncertainties in the system?
+> **1. Are they aware of the uncertainties in the system?**
 > The user would be informed that the system is only trained on cashews, craisins, and almonds, and would not be able to detect other common trail-mix ingredients.
 >
-> 2. How bad would they be impacted by a miss classification?
+> **2. How bad would they be impacted by a miss classification?**
 > If someone is allergic to craisins or cashews or almonds, this model may not be the best choice. We would recommend that people who are allergic to the ingredients do not eat the trail mix due to cross-contamination. However, if they simply do not like one of the ingredients, it is not particularly harmful. 
 >
-> 3. How could change your interactive system to address this?
+> **3. How could change your interactive system to address this?**
 > The user can be told to spread out all of the trail mix ingredients on the plate. Space between the ingredients can ensure a more accurate scan of the plate and provide a more accurate indication of the ingredient distribution.
 >
-> 4. Are there optimizations you can try to do on your sense-making algorithm.
+> **4. Are there optimizations you can try to do on your sense-making algorithm.**
 > In order to make our model more robust, we can add more pictures to continue training the model. These pictures can include the ingredients in much different lighting conditions.
 
 
@@ -169,28 +169,28 @@ For example:
 
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
-> * What can you use *Cashewser* for?
+> * **What can you use *Cashewser* for?**
 > Cashewser is a visibility indication tool that can identify different ingredients in trailmix. (Particularly, cashews, almonds, and craisins)
 >
-> * What is a good environment for *Cashewser*?
+> * **What is a good environment for *Cashewser*?**
 > Cashewser is best used in consistent lighting, like one would normally have in their homes.
 >
-> * What is a bad environment for *Cashewser*?
+> * **What is a bad environment for *Cashewser*?**
 > A bad environment for cashewser would be in overly shadowy or overly bright lighting.
 >
-> * When will *Cashewser* break?
+> * **When will *Cashewser* break?**
 > Cashewser will break outside of the model’s preferred conditions. For example, if there is no cashew, almond, or craisin in frame, Cashewser will still try to categorize everything it sees as one of those three ingredients.
 >
-> * When it breaks how will *Cashewser* break?
+> * **When it breaks how will *Cashewser* break?**
 > Cashewser will continue to attempt to categorize things as either a cashew, almond, or craisin. This may manifest in cashewser trying to categorize your ceiling as a craisin.
 >
-> * What are other properties/behaviors of *Cashewser*?
+> * **What are other properties/behaviors of *Cashewser*?**
 > Cashewser provides auditory cues for its blind and low-vision users. 
 >
-> * How does *Cashewser* feel?
+> * **How does *Cashewser* feel?**
 > Cashewser fits like a glove! In addition, the auditory cues are in a soothing voice that may be calming to the user.
 >
-> * Include a short video demonstrating the answers to these questions.
+> * **Include a short video demonstrating the answers to these questions.**
 > Video is linked [here](https://www.youtube.com/watch?v=9gU5y1xZ5ng)
 
 **Include a short video demonstrating the answers to these questions.**
