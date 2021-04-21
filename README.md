@@ -12,3 +12,7 @@ Please place links here to the README.md's for each of your labs here:
 [Lab 4. Ph-UI!!! (with Priya Kattappurath and Caitlin Stanton)](https://github.com/caitlinstanton/Interactive-Lab-Hub/tree/Spring2021/Lab%204)
 
 [Lab 5. Observant Systems (with Priya Kattappurath and Caitlin Stanton)](https://github.com/caitlinstanton/Interactive-Lab-Hub/tree/Spring2021/Lab%205)
+
+[Lab 6. Where We Go One, We Go All](Lab%206/)
+
+[Final Project](Final%20Project/)
