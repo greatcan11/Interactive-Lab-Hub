@@ -75,47 +75,69 @@ buttonA.switch_to_input()
 buttonB.switch_to_input()
 
 now = time.perf_counter()
-print("now",now)
-end = now + 10
-print("end",end)
-start = False
+end = 0
 current = 0
-time_left = 0
+time_left = 00
+start = False
+win = False
 
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=(0,0,0))
 
     if not start:
-        draw.text((x, y+25), "<-- Press button to start game", font=font, fill=(255,255,255))
+        draw.text((x, y+95), "<-- Press button to start", font=font, fill=(255,255,255))
+        disp.image(image,rotation)
 
-        while buttonA.value:
-            print("waiting to start game")
+        while buttonB.value:
+            print(time.time()," waiting to start game")
 
         # Start button pressed
         start = True
         current = time.perf_counter()
+        end = current + 30
         time_left = end - current
 
     else:
-        # Flash red if alert hasn't been cleared every other second
-        if time_left < 10 and int(time.time())%2 == 0:
-            draw.rectangle((0, 0, width, height), outline=0, fill= (255,0,0))
-        
-        #this chunk needs to be figured out
-        DIFFERENCE = str(int(new_difference_split[1])) + " sec after bedtime"
-        draw.text((x, y+95), "<-- Clear Alert", font=font, fill=(255,255,255))   
-        if buttonA.value:
-            draw.text((x, y+25), "<-- Show Alert", font=font, fill=(255,255,255))
+
+        if time_left > 0:
+
+            text_color = (255,255,255)
+
+            # Flash yellow for last 15 seconds
+            if time_left < 10 and int(time.time())%2 == 0:
+                draw.rectangle((0, 0, width, height), outline=0, fill= (255,256,0))
+                draw.text((x, y+110), "The imposter is coming!", font=font, fill=(0,0,0))
+                text_color = (0,0,0)
+
+            # Always display time left
+            draw.text((x+70, y), "seconds left: ", font=font_big, fill=text_color)
+            current = time.perf_counter()
+            time_left = end - current
+            draw.text((x+30, y), str(int(time_left)), font=font_big, fill=text_color)
+            
+            # Display text
+            draw.text((x, y+45), "TASKS:", font=font, fill=text_color)
+            draw.text((x, y+60), "1. wires", font=font, fill=(0,255,0))
+            draw.text((x, y+75), "2. keypad", font=font, fill=(255,0,0))
+            draw.text((x, y+95), "3. card swipe", font=font, fill=(255,0,0))
+
         else:
-            draw.text((x, y+40), "GO TO SLEEP!", font=font_big, fill=(255,255,255))
+            status = "YOU LOST :("
+            if win:
+                status = "YOU WON!!!"
+            draw.text((x, y+25), "GAME OVER", font=font, fill=(255,255,255))
+            draw.text((x, y+40), status, font=font_big, fill=(255,255,255))
+            draw.text((x, y+95), "<-- Press button to restart", font=font, fill=(255,255,255))
+            disp.image(image,rotation)
 
-    
+            while buttonB.value:
+                print(time.time()," waiting to restart ")
 
-        # Always display time left
-        draw.text((x, y), "Number of seconds left before the imposter comes:", font=font, fill=(255,255,255))
-        draw.text((x+110, y), str(time_left), font=font_big, fill=(255,255,255))
+            start = False
+
+            sleep(.5)
     
     # Display image.
     disp.image(image,rotation)
-    time.sleep(1)
+
