@@ -104,7 +104,7 @@ while True:
 
             text_color = (255,255,255)
 
-            # Flash yellow for last 15 seconds
+            # Flash yellow for last 10 seconds
             if time_left < 10 and int(time.time())%2 == 0:
                 draw.rectangle((0, 0, width, height), outline=0, fill= (255,256,0))
                 draw.text((x, y+110), "The imposter is coming!", font=font, fill=(0,0,0))
