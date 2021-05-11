@@ -98,7 +98,7 @@ By Priya Kattappurath, Caitlin Stanton, and Grace Tan
 >
 >![Wires and LEDs](./Wires.jpg)
 > #### Software ([code](https://github.com/caitlinstanton/Interactive-Lab-Hub/blob/Spring2021/Final%20Project/wires.py))
-> As each of the wiring is connected in parallel and corresponds to its respective GPIO pin, we check whether the values are high, which means that the wire has been properly connected.  To make this easier, we created boolean variables that represent each of the colored wires: green, red, and yellow.  We also made sure to call <GPIO.cleanup()> at the end.  We initially had a bug and found out that we originally had pull up instead of pull down.  This is wrong because we wanted to read when all values are high.
+> As each of the wiring is connected in parallel and corresponds to its respective GPIO pin, we check whether the values are high, which means that the wire has been properly connected.  To make this easier, we created boolean variables that represent each of the colored wires: green, red, and yellow.  We also made sure to call `GPIO.cleanup()` at the end.  We initially had a bug and found out that we originally had pull up instead of pull down.  This is wrong because we wanted to read when all values are high.
 >
 > ### Card Swipe
 > #### Hardware
