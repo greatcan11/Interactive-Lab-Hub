@@ -78,7 +78,7 @@ By Priya Kattappurath, Caitlin Stanton, and Grace Tan
 >
 > ![Game box](./TheSkeldPicture.jpg)
 >
-We also cut a hole in the game box for seamless power integration, as shown in this side view of the game. 
+> We also cut a hole in the game box for seamless power integration, as shown in this side view of the game. 
 >
 > ![kit](./kit.jpg)
 >
@@ -123,7 +123,7 @@ We also cut a hole in the game box for seamless power integration, as shown in t
 >
 > We decided to implement this aspect of the game into our simulator so we ensured that the task would only be completed if the card was swiped between 1 and 3 seconds.  If the card swipe was not between 1 and 3 seconds, the player will stay in the loop.
 >
-> Originally, the datetime library was used since that was used in an earlier lab.  However, after realizing that we only needed to keep track of time and this library made lots of unnecessary objects since it also stored the date, we decided to use `time.perf_counter()` to track the swipe time, which is done by checking the value of the capacitive touch.  The first time it is touched, that is the '''start_time''' and after the card is no longer touching, '''time.perf_counter()''' is called and stored into '''end_time'''.  The difference of these two variables is the amount of time the card touched the capacitive tape and the task will only be complete if that difference falls between 1 and 3 seconds.
+> Originally, the datetime library was used since that was used in an earlier lab.  However, after realizing that we only needed to keep track of time and this library made lots of unnecessary objects since it also stored the date, we decided to use `time.perf_counter()` to track the swipe time, which is done by checking the value of the capacitive touch.  The first time it is touched, that is the `start_time` and after the card is no longer touching, `time.perf_counter()` is called and stored into `end_time`.  The difference of these two variables is the amount of time the card touched the capacitive tape and the task will only be complete if that difference falls between 1 and 3 seconds.
 >
 > Another error we experienced was due to syntax.  Using an equals sign instead of minus sign did not throw an error but started setting variables to weird values.
 >
@@ -144,7 +144,7 @@ Original code: results shown below: ![dictionary error](./dict_error.png)
 > - 6 QWIIC Connectors
 > - Empty mochi ice cream container to mount buttons
 > ##### Setup
-The 6 LED buttons are organized by alternating color for aesthetic effect. The grid of buttons are connected together using QWIIC connectors and mounted onto the frame of the game board. To connect to the Raspberry Pi, an intermediate QWIIC connector connects the button grid to the capacitive touch sensor (which is already QWIIC connected to the Raspberry Pi.)
+> The 6 LED buttons are organized by alternating color for aesthetic effect. The grid of buttons are connected together using QWIIC connectors and mounted onto the frame of the game board. To connect to the Raspberry Pi, an intermediate QWIIC connector connects the button grid to the capacitive touch sensor (which is already QWIIC connected to the Raspberry Pi.)
 [picture of button grid]
 > #### Software ([code](https://github.com/caitlinstanton/Interactive-Lab-Hub/blob/Spring2021/Final%20Project/simon.py))
 > ![FSM for keypad](./keypadFSM.jpg)
@@ -161,12 +161,12 @@ The 6 LED buttons are organized by alternating color for aesthetic effect. The g
 >
 > ![screens2](./Screens2.png)
 >
-> Once time is up, the game will either display that the player won if all tasks have been complete, or that the player lost if not all tasks are complete.  The player also has the option to restart, which will take the player to the initial screen.  This is whon below.
+> Once time is up, the game will either display that the player won if all tasks have been complete, or that the player lost if not all tasks are complete.  The player also has the option to restart, which will take the player to the initial screen.  This is shown below.
 >
 > ![screens3](./Screens3.png)
 >
 > #### Software ([preliminary code](./display.py) and [integrated code](https://github.com/caitlinstanton/Interactive-Lab-Hub/blob/Spring2021/Final%20Project/game.py))
-> We used similar code from lab 2 of this class and enabled button B as that is the button being used to start and restart the game.  We also added <sleep(.5)> for a delay to minimize debouncing.  The black background and corresponding text, colors, and locations would be displayed.  However, for the last 10 seconds of the game, which would be checked with a condition of whether time left was less than 10, we made sure to make the background yellow if it was an even value of <time.time()> so that it would blink yellow every other second.  We also made sure to change the white text to black for this.
+> We used similar code from lab 2 of this class and enabled button B as that is the button being used to start and restart the game.  We also added `sleep(.5)` for a delay to minimize debouncing.  The black background and corresponding text, colors, and locations would be displayed.  However, for the last 10 seconds of the game, which would be checked with a condition of whether time left was less than 10, we made sure to make the background yellow if it was an even value of `time.time()` so that it would blink yellow every other second.  We also made sure to change the white text to black for this.
 >
 > When integrating the display code with the game code, we found that it was difficult to display the order due to how we randomize the order of tasks so it was not fixed.  Thus, we would do a check for every state in the game to see which task corresponded to which order and displayed this order accordingly and it worked. 
 >
@@ -183,4 +183,5 @@ The 6 LED buttons are organized by alternating color for aesthetic effect. The g
 > Additionally, we found that doing user testing was extremely important since testing out various ways to do the keypad task was helpful in determining if the buttons were blinking too quickly, the card swipe was too easy or difficult, or if the amount of time we give for the game is too much time.  Having multiple users test the system was also helpful since everyone would give feedback with how the interface was and if the directions on the screen were clear enough.
 >
 > Finally, we experimented with both in-person and virtual meetings. These meeting types allowed us to be flexible with our restricting schedules while we could work together on both hardware and software aspects of the project.
+>
 > ![team](./team.png)
