@@ -1,7 +1,9 @@
 # Final Project
 
 Using the tools and techniques you learned in this class, design, prototype and test an interactive device.
+
 Functional check-off - May 10
+
 Final Project Presentations (video watch party) - May 12
 
 ## Objective
@@ -24,9 +26,11 @@ You can and are not required to work in teams. Be clear in documentation who con
 [Here is a list of good final projects from previous classes.](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Previous-Final-Projects)
 This version of the class is very different, but it may be useful to see these.
 
-> # AMIDST US: Spaceship Task Simulator
-> By Priya Kattappurath, Caitlin Stanton, and Grace Tan
->
+
+
+# AMIDST US: Spaceship Task Simulator
+By Priya Kattappurath, Caitlin Stanton, and Grace Tan
+
 > ## Documentation of Design Process
 > ### Motivation + Design Process
 > Inspired by the game *Among Us*, we wanted to create a real-life task simulator. Originally, we wanted to do a full recreation of *Among Us*, complete with multiplayer functionality and imposters, but with the time and hardware available to us, we decided to focus on the crewmate task portion of the game. At this point, we went through all the tasks in the game and brainstormed how each of them could be implemented with our available hardware components. Then, with our time constraint in mind, we chose our favorites to be implemented, which we will elaborate on more in the following sections.
@@ -34,24 +38,30 @@ This version of the class is very different, but it may be useful to see these.
 > ### High-Level Task Overview
 > #### Wires
 > In this task, wires are connected in a color-defined configuration in order to light up the respective LEDs. This is inspired by the “Fix Wiring” task in *Among Us*, which is essentially the same thing.
+>
 > ![wires](./among_us_wire.png)
 > #### Card Swipe
 > In this task, the player swipes a conductive-fabric-wrapped card along a capacitive touch sensor for a certain amount of time to mimic the “Swipe Card” task. SImilar to the original task, if the user swipes too quickly or too slowly, they will need to repeat the task.
+>
 > ![swipe](./IMG_5947.PNG)
 > #### Keypad Pattern
 > Inspired by the “Start Reactor” task, this consists of several buttons that will blink in a pattern that the player mimics. The pattern appends in length at each stage until they reach the final pattern.
+>
 > ![startreactor](./IMG_5948.PNG)
 >
 > ### Honorable Mentions for Tasks
 > Here are more tasks that we had come up with during our brainstorming process. While these would have been fun to include, we kept our time constraint in mind, and also noted that these tasks were not as similar to the original tasks as the ones we ultimately chose. 
 > #### Engine Alignment 
 > The user would move the potentiometer until it reached a certain measurement. Inspired by the “Align Engine Output” task, which requires the player to line up a dial with a line on the screen.
+>
 > ![alignengineoutput](./Screenshot_20210425-144442.png)
 > #### Clear out the Dumpster
 > In this task, which is inspired by ”Empty Garbage”, the player would hold down the joystick (acting as the trash shoot lever), for a number of seconds.
+>
 > ![trash](./Screenshot_20210425-151907.png)
 > #### “Medical” Scan
 > inspired by the “Submit Scan” task, would consist of the game asking the player to hold up a certain amount of fingers, and using the camera to scan and check if the correct number of fingers are held up. This is not very similar to the original task, which requires no interaction from the player.
+>
 > ![medbay](./IMG_5949.PNG)
 >
 >
@@ -66,7 +76,7 @@ This version of the class is very different, but it may be useful to see these.
 >
 >  We wanted all the hardware components to fit in a compact, easy to transport game box. We imagine this can be brought to be played in the car, on the bus, on a plane, or anywhere people are waiting.  Thus, everything needed to interact with the game can be mounted in the frame of the box, and the lid provides additional minimalist free space. We found a box that fit all the components comfortably without too much excess space.  This size was perfect since it is smaller than the average laptop, which is good for portability.  The Raspberry Pi that is exposed has no use for the game so for aesthetics, we covered it with a sign that says the name of our game.  This game box, in other words “The Skeld,” one of the locations in the *Among Us* game, is shown below.
 >
-> ![Game box](./TheSkeld.jpg)
+> ![Game box](./TheSkeldPicture.jpg)
 >
 We also cut a hole in the game box for seamless power integration, as shown in this side view of the game. 
 >
@@ -85,7 +95,8 @@ We also cut a hole in the game box for seamless power integration, as shown in t
 > - LEDs
 > ##### Setup
 > To set up this task, the three different colored LEDs are placed across the middle divider of the bread board. The negative side (shorter end) of each LED is connected to the GND line of the breadboard, which is connected to the common ground of the Raspberry Pi. The power line of the breadboard is connected to the 3.3V line. For each LED, a jumper wire is attached at one end to 3.3V power, and the other end is left detached-- in game, the player will connect this to the positive end of the respective LED to turn it on. All wires and jumper cables are color coded to the color of each LED so the player knows which jumper cable to attach to which LED. 3 additional wires connect the positive end of each LED to GPIO5, GPIO6, and GPIO13 on the Raspberry Pi. When all wires are connected (and all LEDs are on), these GPIO pins will all read HIGH, and signal that the task has been completed. 
-![Wires and LEDs](./Wires.jpg)
+>
+>![Wires and LEDs](./Wires.jpg)
 > #### Software ([code](https://github.com/caitlinstanton/Interactive-Lab-Hub/blob/Spring2021/Final%20Project/wires.py))
 > As each of the wiring is connected in parallel and corresponds to its respective GPIO pin, we check whether the values are high, which means that the wire has been properly connected.  To make this easier, we created boolean variables that represent each of the colored wires: green, red, and yellow.  We also made sure to call <GPIO.cleanup()> at the end.  We initially had a bug and found out that we originally had pull up instead of pull down.  This is wrong because we wanted to read when all values are high.
 >
@@ -99,7 +110,7 @@ We also cut a hole in the game box for seamless power integration, as shown in t
 > - Card-sized piece of cardboard
 > - Markers to decorate
 > ##### Setup
-> For the actual card, we used two pieces of cardboard, since only one piece of cardboard was not thick enough for the capacitive touch sensor to detect the card.  On the top side of the card, a piece of capacitive fabric is adhered (this is the side that the player will “swipe” onto the capacitive touch sensor).  This is shown below.
+> For the actual card, we used two pieces of cardboard, since only one piece of cardboard was not thick enough for the capacitive touch sensor to detect the card.  On the top side of the card, a piece of capacitive fabric is adhered (this is the side that the player will “swipe” onto the capacitive touch sensor).  This was also decorated with marker as the card in the game is decorated, as shown below.
 >
 > ![Card](./PXL_20210505_162508983.jpg)
 >
@@ -112,7 +123,7 @@ We also cut a hole in the game box for seamless power integration, as shown in t
 >
 > We decided to implement this aspect of the game into our simulator so we ensured that the task would only be completed if the card was swiped between 1 and 3 seconds.  If the card swipe was not between 1 and 3 seconds, the player will stay in the loop.
 >
-> Originally, the datetime library was used since that was used in an earlier lab.  However, after realizing that we only needed to keep track of time and this library made lots of unnecessary objects since it also stored the date, we decided to use <time.perf_counter()> to track the swipe time, which is done by checking the value of the capacitive touch.  The first time it is touched, that is the <start_time> and after the card is no longer touching, <time.perf_counter()> is called and stored into <end_time>.  The difference of these two variables is the amount of time the card touched the capacitive tape and the task will only be complete if that difference falls between 1 and 3 seconds.
+> Originally, the datetime library was used since that was used in an earlier lab.  However, after realizing that we only needed to keep track of time and this library made lots of unnecessary objects since it also stored the date, we decided to use '''time.perf_counter()''' to track the swipe time, which is done by checking the value of the capacitive touch.  The first time it is touched, that is the '''start_time''' and after the card is no longer touching, '''time.perf_counter()''' is called and stored into '''end_time'''.  The difference of these two variables is the amount of time the card touched the capacitive tape and the task will only be complete if that difference falls between 1 and 3 seconds.
 >
 > Another error we experienced was due to syntax.  Using an equals sign instead of minus sign did not throw an error but started setting variables to weird values.
 >
@@ -142,7 +153,7 @@ The 6 LED buttons are organized by alternating color for aesthetic effect. The g
 > ##### Parts List
 > - Mini PiTFT screen
 > ##### Setup
-> For the display, we decided to have a simple interface that mimics the *Among Us* game so that the background is black and the text would be white.  The first screen just indicates which button to press to start the game.  Once the button is pressed, the timer is displayed on the top in bigger font for emphasis.  Similarly to the game, we list of tasks in order.  Originally, we only had bullets, but we realized that having a numbered list would be more clear that these tasks had to be done in order since the *Among Us* game allows any order of completion for tasks.  We followed the game's convention of a red task being imcomplete while green was complete.  This is shown below.
+> For the display, we decided to have a simple interface that mimics the *Among Us* game so that the background is black and the text would be white.  The first screen just indicates which button to press to start the game.  Once the button is pressed, the timer is displayed on the top in bigger font for emphasis.  Similarly to the game, we list of tasks in order.  Originally, we only had bullets, but we realized that having a numbered list would be more clear that these tasks had to be done in order since the *Among Us* game allows any order of completion for tasks.  We followed the game's convention of a green task as complete.  We made the incomplete tasks as red for emphasis.  This is shown below.
 >
 > ![screens1](./Screens1.png)
 >
